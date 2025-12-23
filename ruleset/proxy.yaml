@@ -1,0 +1,7 @@
+rules:
+  - type: domain-suffix
+    value: openai.com
+    policy: proxy
+  - type: domain-suffix
+    value: anthropic.com
+    policy: proxy

@@ -1,0 +1,30 @@
+name: Build Rules
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - run: pip install pyyaml requests
+      
+      - run: python scripts/fetch_airport.py ${{ secrets.AIRPORT_SUB }}
+      
+      - run: python generators/gen_clash.py
+      
+      - run: python generators/gen_shadowrocket.py
+      
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add output/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update rules" && git push)
