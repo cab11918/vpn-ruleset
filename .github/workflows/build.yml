@@ -19,7 +19,7 @@ jobs:
       
       - run: pip install pyyaml requests
       
-      - run: python scripts/fetch_airport.py ${{ secrets.AIRPORT_SUB }}
+      - run: python scripts/fetch_airport.py ${{ secrets.AIRPORT_SUB }} ${{ secrets.SHADOWROCKET_SUB }}
       
       - run: python generators/gen_clash.py
       
