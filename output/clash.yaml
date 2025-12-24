@@ -1,2083 +1,2085 @@
-allow-lan: true
-external-controller: :9090
-log-level: info
-mode: Rule
 port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
 proxies:
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 剩余 117 天 (2026-04-20 17:37)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20850
+- name: 剩余 117 天 (2026-04-20 17:37)
+  type: trojan
   server: tpahk.nwncd.com
-  sni: azhk50.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 剩余 2.35TB 流量
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20847
-  server: tpahk.nwncd.com
-  sni: azhk47.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 07
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20851
-  server: tpahk.nwncd.com
-  sni: azhk51.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 07 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20849
-  server: tpahk.nwncd.com
-  sni: azhk49.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 11
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 467
-  server: azhk11.nwncd.com
-  sni: azhk11.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 11 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20811
-  server: tpahk.nwncd.com
-  sni: azhk11.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 17
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 507
-  server: azhk17.nwncd.com
-  sni: azhk17.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 17 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20817
-  server: tpahk.nwncd.com
-  sni: azhk17.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 22
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 467
-  server: azhk22.nwncd.com
-  sni: azhk22.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 22 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20822
-  server: tpahk.nwncd.com
-  sni: azhk22.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 25
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 471
-  server: azhk25.nwncd.com
-  sni: azhk25.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 25 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20825
-  server: tpahk.nwncd.com
-  sni: azhk25.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 30
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 463
-  server: azhk30.nwncd.com
-  sni: azhk30.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 30 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20830
-  server: tpahk.nwncd.com
-  sni: azhk30.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 31
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 501
-  server: azhk31.nwncd.com
-  sni: azhk31.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 31 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20831
-  server: tpahk.nwncd.com
-  sni: azhk31.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 32
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 467
-  server: azhk32.nwncd.com
-  sni: azhk32.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 32 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20832
-  server: tpahk.nwncd.com
-  sni: azhk32.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 34
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 463
-  server: azhk34.nwncd.com
-  sni: azhk34.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 34 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 20834
-  server: tpahk.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk34.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 39
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 469
-  server: azhk39.nwncd.com
-  sni: azhk39.nwncd.com
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 剩余 2.35TB 流量
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 39 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20839
   server: tpahk.nwncd.com
-  sni: azhk39.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 40
-  network: grpc
+  port: 20834
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 467
-  server: azhk40.nwncd.com
-  sni: azhk40.nwncd.com
-  type: trojan
+  sni: azhk34.nwncd.com
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 40 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 07
+  type: trojan
+  server: tpahk.nwncd.com
   port: 20840
-  server: tpahk.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk40.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 41
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 665
-  server: azhk41.nwncd.com
-  sni: azhk41.nwncd.com
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 07 (中转)
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 41 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20841
   server: tpahk.nwncd.com
-  sni: azhk41.nwncd.com
-  type: trojan
+  port: 20840
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk40.nwncd.com
   udp: true
-- down: 1000
-  name: A Series - HK 41 (Hysteria2)
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 11
+  type: trojan
+  server: azhk11.nwncd.com
+  port: 467
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk11.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 11 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20811
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk11.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 17
+  type: trojan
+  server: azhk17.nwncd.com
+  port: 507
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk17.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 17 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20817
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk17.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 22
+  type: trojan
+  server: azhk22.nwncd.com
+  port: 467
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk22.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 22 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20822
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk22.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 25
+  type: trojan
+  server: azhk25.nwncd.com
+  port: 471
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk25.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 25 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20825
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk25.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 30
+  type: trojan
+  server: azhk30.nwncd.com
+  port: 463
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk30.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 30 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20830
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk30.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 31
+  type: trojan
+  server: azhk31.nwncd.com
+  port: 501
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk31.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 31 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20831
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk31.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 32
+  type: trojan
+  server: azhk32.nwncd.com
+  port: 467
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk32.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 32 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20832
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk32.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 34
+  type: trojan
+  server: azhk34.nwncd.com
+  port: 463
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk34.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 34 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20834
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk34.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 39
+  type: trojan
+  server: azhk39.nwncd.com
+  port: 469
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk39.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 39 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20839
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk39.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 40
+  type: trojan
+  server: azhk40.nwncd.com
+  port: 467
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk40.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 40 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20840
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk40.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 41
+  type: trojan
+  server: azhk41.nwncd.com
+  port: 665
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk41.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 41 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20841
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk41.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 41 (Hysteria2)
+  type: hysteria2
+  server: azhk41.nwncd.com
+  port: 48659
+  password: laVwQaS5xkjDc3u4
   obfs: salamander
   obfs-password: ZUXuK5pPkU2vqREc
-  password: laVwQaS5xkjDc3u4
-  port: 48659
-  server: azhk41.nwncd.com
-  type: hysteria2
   up: 1000
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 43
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 1093
+  down: 1000
+- name: A Series - HK 43
+  type: trojan
   server: azhk43.nwncd.com
-  sni: azhk43.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 43 (中转)
-  network: grpc
+  port: 1093
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20843
-  server: tpahk.nwncd.com
   sni: azhk43.nwncd.com
-  type: trojan
   udp: true
-- down: 1000
-  name: A Series - HK 43 (Hysteria2)
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 43 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20843
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk43.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 43 (Hysteria2)
+  type: hysteria2
+  server: azhk43.nwncd.com
+  port: 56325
+  password: laVwQaS5xkjDc3u4
   obfs: salamander
   obfs-password: qCNPiMI5yCltmSnl
-  password: laVwQaS5xkjDc3u4
-  port: 56325
-  server: azhk43.nwncd.com
-  type: hysteria2
   up: 1000
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 44
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 799
+  down: 1000
+- name: A Series - HK 44
+  type: trojan
   server: azhk44.nwncd.com
-  sni: azhk44.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 44 (中转)
-  network: grpc
+  port: 799
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20844
-  server: tpahk.nwncd.com
   sni: azhk44.nwncd.com
-  type: trojan
   udp: true
-- down: 1000
-  name: A Series - HK 44 (Hysteria2)
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 44 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20844
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk44.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 44 (Hysteria2)
+  type: hysteria2
+  server: azhk44.nwncd.com
+  port: 53245
+  password: laVwQaS5xkjDc3u4
   obfs: salamander
   obfs-password: cTVh6YgUrzQHcQX4
-  password: laVwQaS5xkjDc3u4
-  port: 53245
-  server: azhk44.nwncd.com
-  type: hysteria2
   up: 1000
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 45
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 471
+  down: 1000
+- name: A Series - HK 45
+  type: trojan
   server: azhk45.nwncd.com
-  sni: azhk45.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 45 (中转)
-  network: grpc
+  port: 471
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk45.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 45 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
   port: 20845
-  server: tpahk.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk45.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 46
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 51725
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 46
+  type: trojan
   server: azhk46.nwncd.com
-  sni: azhk46.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 46 (中转)
-  network: grpc
+  port: 51725
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk46.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 46 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
   port: 20846
-  server: tpahk.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk46.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 47
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35226
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 47
+  type: trojan
   server: azhk47.nwncd.com
-  sni: azhk47.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 47 (中转)
-  network: grpc
+  port: 35226
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk47.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 47 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
   port: 20847
-  server: tpahk.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk47.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 48
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35224
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 48
+  type: trojan
   server: azhk48.nwncd.com
-  sni: azhk48.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 48 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20848
-  server: tpahk.nwncd.com
-  sni: azhk48.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 49
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 35224
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk48.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 48 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20848
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk48.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 49
+  type: trojan
   server: azhk49.nwncd.com
-  sni: azhk49.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 49 (中转)
-  network: grpc
+  port: 35224
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk49.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 49 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
   port: 20849
-  server: tpahk.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk49.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 50
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35226
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 50
+  type: trojan
   server: azhk50.nwncd.com
-  sni: azhk50.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 50 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20850
-  server: tpahk.nwncd.com
-  sni: azhk50.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 51
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 35226
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk50.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 50 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20850
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk50.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 51
+  type: trojan
   server: azhk51.nwncd.com
-  sni: azhk51.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: A Series - HK 51 (中转)
-  network: grpc
+  port: 35226
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk51.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 51 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
   port: 20851
-  server: tpahk.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk51.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: AC Series - HK 01
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 467
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: AC Series - HK 01
+  type: trojan
   server: hkd01.nwncd.com
+  port: 467
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: hkd01.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: AC Series - HK 02
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 517
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: AC Series - HK 02
+  type: trojan
   server: hkac02.nwncd.com
+  port: 517
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: hkac02.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 【B Series 最快 50Mbps】
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 453
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 【B Series 最快 50Mbps】
+  type: trojan
   server: azhk02.nwncd.com
-  sni: azhk02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 02 (中转)
-  network: grpc
+  port: 453
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 02 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20802
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk02.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 03 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 03 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20803
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk03.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 04 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 04 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20804
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk04.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 05 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 05 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20805
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk05.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 13 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 13 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20813
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk13.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 14 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 14 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20814
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk14.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 15 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 15 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20815
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk15.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 16 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 16 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20816
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk16.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 18 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 18 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20818
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk18.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 19 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 19 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20819
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk19.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 21 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 21 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20821
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk21.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 33 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 33 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20833
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk33.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 35 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 35 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20835
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk35.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 37 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 37 (中转)
+  type: trojan
+  server: rehkb.nwncd.com
   port: 20837
-  server: rehkb.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk37.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: B Series - HK 38 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20838
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: B Series - HK 38 (中转)
+  type: trojan
   server: rehkb.nwncd.com
+  port: 20838
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk38.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: C Series - HK 29
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 711
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: C Series - HK 29
+  type: trojan
   server: azhk29.nwncd.com
-  sni: azhk29.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: C Series - HK 29 (中转)
-  network: grpc
+  port: 711
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20829
-  server: tpahk.nwncd.com
   sni: azhk29.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: C Series - HK 29 (中转)
   type: trojan
+  server: tpahk.nwncd.com
+  port: 20829
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk29.nwncd.com
   udp: true
-- alterId: '2'
-  cipher: auto
-  name: California (美国) A01
-  network: ws
-  port: 38841
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) A01
   server: usa01.nwncd.com
-  servername: portal.azure.com
-  skip-cert-verify: true
-  tls: false
+  port: 38841
   type: vmess
-  udp: true
   uuid: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  alterId: '2'
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  servername: portal.azure.com
+  network: ws
   ws-opts:
+    path: /amdyes
     headers:
       Host: portal.azure.com
-    path: /amdyes
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: 将在 12-28 恢复 (California (美国) A02)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 65294
+  udp: true
+- name: 将在 12-28 恢复 (California (美国) A02)
+  type: trojan
   server: usa02.nwncd.com
+  port: 65294
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa02.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: 将在 12-28 恢复 (California (美国) A03)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 46925
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: 将在 12-28 恢复 (California (美国) A03)
+  type: trojan
   server: usa03.nwncd.com
+  port: 46925
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa03.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: 将在 12-28 恢复 (California (美国) A04)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 32759
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: 将在 12-28 恢复 (California (美国) A04)
+  type: trojan
   server: usa04.nwncd.com
+  port: 32759
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa04.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-15 恢复 (California (美国) A05)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 461
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: 将在 01-15 恢复 (California (美国) A05)
+  type: trojan
   server: usa05.nwncd.com
+  port: 461
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa05.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-16 恢复 (California (美国) A06)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 461
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-16 恢复 (California (美国) A06)
+  type: trojan
   server: usa06.nwncd.com
+  port: 461
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa06.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-16 恢复 (California (美国) A07)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 461
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-16 恢复 (California (美国) A07)
+  type: trojan
   server: usa07.nwncd.com
+  port: 461
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa07.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-16 恢复 (California (美国) A08)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 459
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-16 恢复 (California (美国) A08)
+  type: trojan
   server: usa08.nwncd.com
+  port: 459
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa08.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-16 恢复 (California (美国) A09)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 461
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-16 恢复 (California (美国) A09)
+  type: trojan
   server: usa09.nwncd.com
+  port: 461
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa09.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-04 恢复 (California (美国) A10)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 459
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-04 恢复 (California (美国) A10)
+  type: trojan
   server: usa10.nwncd.com
+  port: 459
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa10.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-01 恢复 (California (美国) A11)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 443
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-01 恢复 (California (美国) A11)
+  type: trojan
   server: usa11.nwncd.com
+  port: 443
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa11.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-01 恢复 (California (美国) A12)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 459
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-01 恢复 (California (美国) A12)
+  type: trojan
   server: usa12.nwncd.com
+  port: 459
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa12.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-01 恢复 (California (美国) A13)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 461
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-01 恢复 (California (美国) A13)
+  type: trojan
   server: usa13.nwncd.com
+  port: 461
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa13.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-01 恢复 (California (美国) A14)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 459
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-01 恢复 (California (美国) A14)
+  type: trojan
   server: usa14.nwncd.com
+  port: 459
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa14.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-01 恢复 (California (美国) A15)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 461
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-01 恢复 (California (美国) A15)
+  type: trojan
   server: usa15.nwncd.com
+  port: 461
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa15.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) A16
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 465
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) A16
+  type: trojan
   server: usa16.nwncd.com
+  port: 465
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usa16.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) A17
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 465
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) A17
+  type: trojan
   server: usa17.nwncd.com
-  sni: usa17.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-12 恢复 (California (美国) A18)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 461
-  server: usa18.nwncd.com
-  sni: usa18.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) A19
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 465
-  server: usa19.nwncd.com
-  sni: usa19.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-12 恢复 (California (美国) A20)
-  network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 467
-  server: usa20.nwncd.com
-  sni: usa20.nwncd.com
-  type: trojan
+  sni: usa17.nwncd.com
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-14 恢复 (California (美国) B01)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 463
-  server: usb01.nwncd.com
-  sni: usb01.nwncd.com
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-12 恢复 (California (美国) A18)
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-14 恢复 (California (美国) B02)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 463
-  server: usb02.nwncd.com
-  sni: usb02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-14 恢复 (California (美国) B03)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 463
-  server: usb03.nwncd.com
-  sni: usb03.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-14 恢复 (California (美国) B04)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  server: usa18.nwncd.com
   port: 461
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usa18.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) A19
+  type: trojan
+  server: usa19.nwncd.com
+  port: 465
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usa19.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-12 恢复 (California (美国) A20)
+  type: trojan
+  server: usa20.nwncd.com
+  port: 467
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usa20.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-14 恢复 (California (美国) B01)
+  type: trojan
+  server: usb01.nwncd.com
+  port: 463
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-14 恢复 (California (美国) B02)
+  type: trojan
+  server: usb02.nwncd.com
+  port: 463
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-14 恢复 (California (美国) B03)
+  type: trojan
+  server: usb03.nwncd.com
+  port: 463
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb03.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-14 恢复 (California (美国) B04)
+  type: trojan
   server: usb04.nwncd.com
+  port: 461
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb04.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-14 恢复 (California (美国) B05)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-14 恢复 (California (美国) B05)
+  type: trojan
   server: usb05.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb05.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B06
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B06
+  type: trojan
   server: usb06.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb06.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B07
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B07
+  type: trojan
   server: usb07.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb07.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B08
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B08
+  type: trojan
   server: usb08.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb08.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B09
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B09
+  type: trojan
   server: usb09.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb09.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B10
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 459
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B10
+  type: trojan
   server: usb10.nwncd.com
+  port: 459
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb10.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B11
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B11
+  type: trojan
   server: usb11.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb11.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B12
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B12
+  type: trojan
   server: usb12.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb12.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B13
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 459
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B13
+  type: trojan
   server: usb13.nwncd.com
+  port: 459
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb13.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B14
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 459
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B14
+  type: trojan
   server: usb14.nwncd.com
+  port: 459
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb14.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B15
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B15
+  type: trojan
   server: usb15.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: usb15.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B16
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 459
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B16
+  type: trojan
   server: usb16.nwncd.com
-  sni: usb16.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B17
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb17.nwncd.com
-  sni: usb17.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B18
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb18.nwncd.com
-  sni: usb18.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B19
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb19.nwncd.com
-  sni: usb19.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B20
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb20.nwncd.com
-  sni: usb20.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B21
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb21.nwncd.com
-  sni: usb21.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B22
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb22.nwncd.com
-  sni: usb22.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B23
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb23.nwncd.com
-  sni: usb23.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B24
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb24.nwncd.com
-  sni: usb24.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B25
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb25.nwncd.com
-  sni: usb25.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B26
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb26.nwncd.com
-  sni: usb26.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: California (美国) B27
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 457
-  server: usb27.nwncd.com
-  sni: usb27.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-02 恢复 (California (美国) E01)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 1269
-  server: use01.nwncd.com
-  sni: use01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-02 恢复 (California (美国) E01 (中转))
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 22001
-  server: tpahk.nwncd.com
-  sni: use01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 12-26 恢复 (California (美国) E02)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 1787
-  server: use02.nwncd.com
-  sni: use02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 12-26 恢复 (California (美国) E02 (中转))
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 22002
-  server: tpahk.nwncd.com
-  sni: use02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: community
-  name: California (美国) F01
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 50697
-  server: usf01.nwncd.com
-  sni: usf01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G01
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 50679
-  server: usg01.nwncd.com
-  sni: usg01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G02
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 39472
-  server: usg02.nwncd.com
-  sni: usg02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G03
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 49372
-  server: usg03.nwncd.com
-  sni: usg03.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G04
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 38274
-  server: usg04.nwncd.com
-  sni: usg04.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G05
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 39206
-  server: usg05.nwncd.com
-  sni: usg05.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G06
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 28472
-  server: usg06.nwncd.com
-  sni: usg06.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G07
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53942
-  server: usg07.nwncd.com
-  sni: usg07.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: 将在 12-28 恢复 (California (美国) G08)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53940
-  server: usg08.nwncd.com
-  sni: usg08.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: 将在 12-28 恢复 (California (美国) G09)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53940
-  server: usg09.nwncd.com
-  sni: usg09.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G10
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53940
-  server: usg10.nwncd.com
-  sni: usg10.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G11
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53940
-  server: usg11.nwncd.com
-  sni: usg11.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G12
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53940
-  server: usg12.nwncd.com
-  sni: usg12.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G13
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53940
-  server: usg13.nwncd.com
-  sni: usg13.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: California (美国) G14
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53940
-  server: usg14.nwncd.com
-  sni: usg14.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: China Taiwan A01 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 511
-  server: tptw.nwncd.com
-  sni: twa01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: communitarian
-  name: China Taiwan B01
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 53940
-  server: twb01.nwncd.com
-  sni: twb01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: China Taiwan B02
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 663
-  server: twb02.nwncd.com
-  sni: twb02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: China Taiwan B02 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 522
-  server: tptw.nwncd.com
-  sni: twb02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: China Taiwan C01
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 789
-  server: twc01.nwncd.com
-  sni: twc01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: China Taiwan C01 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 711
-  server: tptw.nwncd.com
-  sni: twc01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: China Taiwan C02
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 463
-  server: twc02.nwncd.com
-  sni: twc02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: China Taiwan C02 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 712
-  server: tptw.nwncd.com
-  sni: twc02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Hong Kong C01
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 459
-  server: hkc01.nwncd.com
-  sni: hkc01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Hong Kong C01 (中转)
-  network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 58201
+  sni: usb16.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B17
+  type: trojan
+  server: usb17.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb17.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B18
+  type: trojan
+  server: usb18.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb18.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B19
+  type: trojan
+  server: usb19.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb19.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B20
+  type: trojan
+  server: usb20.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb20.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B21
+  type: trojan
+  server: usb21.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb21.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B22
+  type: trojan
+  server: usb22.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb22.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B23
+  type: trojan
+  server: usb23.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb23.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B24
+  type: trojan
+  server: usb24.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb24.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B25
+  type: trojan
+  server: usb25.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb25.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B26
+  type: trojan
+  server: usb26.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb26.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) B27
+  type: trojan
+  server: usb27.nwncd.com
+  port: 457
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: usb27.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-02 恢复 (California (美国) E01)
+  type: trojan
+  server: use01.nwncd.com
+  port: 1269
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: use01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-02 恢复 (California (美国) E01 (中转))
+  type: trojan
   server: tpahk.nwncd.com
-  sni: hkc01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A01
-  network: grpc
+  port: 22001
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35700
-  server: jpa01.nwncd.com
-  sni: jpa01.nwncd.com
-  type: trojan
+  sni: use01.nwncd.com
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A01 (中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 601
-  server: rejpa.nwncd.com
-  sni: jpa01.nwncd.com
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 12-26 恢复 (California (美国) E02)
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A02
-  network: grpc
+  server: use02.nwncd.com
+  port: 1787
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35566
-  server: jpa02.nwncd.com
-  sni: jpa02.nwncd.com
+  sni: use02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 12-26 恢复 (California (美国) E02 (中转))
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A02 (中转)
-  network: grpc
+  server: tpahk.nwncd.com
+  port: 22002
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 602
-  server: rejpa.nwncd.com
-  sni: jpa02.nwncd.com
+  sni: use02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: California (美国) F01
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A03
-  network: grpc
+  server: usf01.nwncd.com
+  port: 50697
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35493
-  server: jpa03.nwncd.com
-  sni: jpa03.nwncd.com
+  sni: usf01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: community
+- name: California (美国) G01
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A03 (中转)
-  network: grpc
+  server: usg01.nwncd.com
+  port: 50679
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 603
-  server: rejpa.nwncd.com
-  sni: jpa03.nwncd.com
+  sni: usg01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G02
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A04
-  network: grpc
+  server: usg02.nwncd.com
+  port: 39472
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35706
-  server: jpa04.nwncd.com
-  sni: jpa04.nwncd.com
+  sni: usg02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G03
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A04 (中转)
-  network: grpc
+  server: usg03.nwncd.com
+  port: 49372
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 604
-  server: rejpa.nwncd.com
-  sni: jpa04.nwncd.com
+  sni: usg03.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G04
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A05
-  network: grpc
+  server: usg04.nwncd.com
+  port: 38274
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 34793
-  server: jpa05.nwncd.com
-  sni: jpa05.nwncd.com
+  sni: usg04.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G05
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A05 (中转)
-  network: grpc
+  server: usg05.nwncd.com
+  port: 39206
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 605
-  server: rejpa.nwncd.com
-  sni: jpa05.nwncd.com
+  sni: usg05.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G06
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A06
-  network: grpc
+  server: usg06.nwncd.com
+  port: 28472
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35494
-  server: jpa06.nwncd.com
-  sni: jpa06.nwncd.com
+  sni: usg06.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G07
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A06 (中转)
-  network: grpc
+  server: usg07.nwncd.com
+  port: 53942
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 606
-  server: rejpa.nwncd.com
-  sni: jpa06.nwncd.com
+  sni: usg07.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: 将在 12-28 恢复 (California (美国) G08)
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A07
-  network: grpc
+  server: usg08.nwncd.com
+  port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35230
-  server: jpa07.nwncd.com
-  sni: jpa07.nwncd.com
+  sni: usg08.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: 将在 12-28 恢复 (California (美国) G09)
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A07 (中转)
-  network: grpc
+  server: usg09.nwncd.com
+  port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 607
-  server: rejpa.nwncd.com
-  sni: jpa07.nwncd.com
+  sni: usg09.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G10
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A08
-  network: grpc
+  server: usg10.nwncd.com
+  port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35230
-  server: jpa08.nwncd.com
-  sni: jpa08.nwncd.com
+  sni: usg10.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G11
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A08 (中转)
-  network: grpc
+  server: usg11.nwncd.com
+  port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 608
-  server: rejpa.nwncd.com
-  sni: jpa08.nwncd.com
+  sni: usg11.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G12
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A09
-  network: grpc
+  server: usg12.nwncd.com
+  port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35844
-  server: jpa09.nwncd.com
-  sni: jpa09.nwncd.com
+  sni: usg12.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G13
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A09 (中转)
-  network: grpc
+  server: usg13.nwncd.com
+  port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 609
-  server: rejpa.nwncd.com
-  sni: jpa09.nwncd.com
+  sni: usg13.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: California (美国) G14
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A10
-  network: grpc
+  server: usg14.nwncd.com
+  port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 36740
-  server: jpa10.nwncd.com
-  sni: jpa10.nwncd.com
+  sni: usg14.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: China Taiwan A01 (中转)
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A10 (中转)
-  network: grpc
+  server: tptw.nwncd.com
+  port: 511
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 610
-  server: rejpa.nwncd.com
-  sni: jpa10.nwncd.com
+  sni: twa01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: China Taiwan B01
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A11
-  network: grpc
+  server: twb01.nwncd.com
+  port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35692
-  server: jpa11.nwncd.com
-  sni: jpa11.nwncd.com
+  sni: twb01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: communitarian
+- name: China Taiwan B02
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A11 (中转)
-  network: grpc
+  server: twb02.nwncd.com
+  port: 663
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 611
-  server: rejpa.nwncd.com
-  sni: jpa11.nwncd.com
+  sni: twb02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: China Taiwan B02 (中转)
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A12
-  network: grpc
+  server: tptw.nwncd.com
+  port: 522
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35887
-  server: jpa12.nwncd.com
-  sni: jpa12.nwncd.com
+  sni: twb02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: China Taiwan C01
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A12 (中转)
-  network: grpc
+  server: twc01.nwncd.com
+  port: 789
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 612
-  server: rejpa.nwncd.com
-  sni: jpa12.nwncd.com
+  sni: twc01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: China Taiwan C01 (中转)
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A13
-  network: grpc
+  server: tptw.nwncd.com
+  port: 711
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35232
-  server: jpa13.nwncd.com
-  sni: jpa13.nwncd.com
+  sni: twc01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: China Taiwan C02
   type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A13 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 613
-  server: rejpa.nwncd.com
-  sni: jpa13.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A14
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35452
-  server: jpa14.nwncd.com
-  sni: jpa14.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A14 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 614
-  server: rejpa.nwncd.com
-  sni: jpa14.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A15
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35498
-  server: jpa15.nwncd.com
-  sni: jpa15.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan A15 (中转)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 615
-  server: rejpa.nwncd.com
-  sni: jpa15.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan B01
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  server: twc02.nwncd.com
   port: 463
-  server: jpb01.nwncd.com
-  sni: jpb01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Japan B01 (香港中转)
-  network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 50101
-  server: azhk22.nwncd.com
-  sni: jpb01.nwncd.com
-  type: trojan
+  sni: twc02.nwncd.com
   udp: true
-- down: 1000
-  name: Japan C01 (直连)
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: China Taiwan C02 (中转)
+  type: trojan
+  server: tptw.nwncd.com
+  port: 712
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: twc02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Hong Kong C01
+  type: trojan
+  server: hkc01.nwncd.com
+  port: 459
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: hkc01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Hong Kong C01 (中转)
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 58201
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: hkc01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A01
+  type: trojan
+  server: jpa01.nwncd.com
+  port: 35700
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A01 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 601
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A02
+  type: trojan
+  server: jpa02.nwncd.com
+  port: 35566
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A02 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 602
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A03
+  type: trojan
+  server: jpa03.nwncd.com
+  port: 35493
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa03.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A03 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 603
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa03.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A04
+  type: trojan
+  server: jpa04.nwncd.com
+  port: 35706
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa04.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A04 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 604
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa04.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A05
+  type: trojan
+  server: jpa05.nwncd.com
+  port: 34793
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa05.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A05 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 605
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa05.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A06
+  type: trojan
+  server: jpa06.nwncd.com
+  port: 35494
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa06.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A06 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 606
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa06.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A07
+  type: trojan
+  server: jpa07.nwncd.com
+  port: 35230
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa07.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A07 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 607
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa07.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A08
+  type: trojan
+  server: jpa08.nwncd.com
+  port: 35230
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa08.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A08 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 608
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa08.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A09
+  type: trojan
+  server: jpa09.nwncd.com
+  port: 35844
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa09.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A09 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 609
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa09.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A10
+  type: trojan
+  server: jpa10.nwncd.com
+  port: 36740
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa10.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A10 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 610
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa10.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A11
+  type: trojan
+  server: jpa11.nwncd.com
+  port: 35692
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa11.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A11 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 611
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa11.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A12
+  type: trojan
+  server: jpa12.nwncd.com
+  port: 35887
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa12.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A12 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 612
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa12.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A13
+  type: trojan
+  server: jpa13.nwncd.com
+  port: 35232
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa13.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A13 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 613
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa13.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A14
+  type: trojan
+  server: jpa14.nwncd.com
+  port: 35452
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa14.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A14 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 614
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa14.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A15
+  type: trojan
+  server: jpa15.nwncd.com
+  port: 35498
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa15.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan A15 (中转)
+  type: trojan
+  server: rejpa.nwncd.com
+  port: 615
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpa15.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan B01
+  type: trojan
+  server: jpb01.nwncd.com
+  port: 463
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpb01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan B01 (香港中转)
+  type: trojan
+  server: azhk22.nwncd.com
+  port: 50101
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: jpb01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Japan C01 (直连)
+  type: hysteria2
+  server: jpc01.nwncd.com
+  port: 38710
+  password: laVwQaS5xkjDc3u4
   obfs: salamander
   obfs-password: dl7CedM15GCLTGZl
-  password: laVwQaS5xkjDc3u4
-  port: 38710
-  server: jpc01.nwncd.com
-  type: hysteria2
   up: 1000
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Russia B01
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  down: 1000
+- name: Russia B01
+  type: trojan
+  server: tpahk.nwncd.com
   port: 25612
-  server: tpahk.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: rub01.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 土耳其01 (国内中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 土耳其01 (国内中转)
+  type: trojan
+  server: tpahk.nwncd.com
   port: 59101
-  server: tpahk.nwncd.com
-  sni: tur.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 土耳其01 (香港中转)
-  network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: tur.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 土耳其01 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50091
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: tur.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 土耳其02 (国内中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 土耳其02 (国内中转)
+  type: trojan
+  server: tpahk.nwncd.com
   port: 59102
-  server: tpahk.nwncd.com
-  sni: tur2.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 土耳其02 (香港中转)
-  network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: tur2.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 土耳其02 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50092
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: tur2.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 土耳其03 (香港中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 土耳其03 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50061
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: tur3.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 德国A01
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35324
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 德国A01
+  type: trojan
   server: dea01.nwncd.com
-  sni: dea01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 德国A01 (香港中转)
-  network: grpc
+  port: 35324
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: dea01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 德国A01 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50031
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: dea01.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 意大利A01
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35322
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 意大利A01
+  type: trojan
   server: ita01.nwncd.com
-  sni: ita01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 意大利A01 (香港中转)
-  network: grpc
+  port: 35322
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: ita01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 意大利A01 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50021
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: ita01.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 新加坡A01 (香港中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 新加坡A01 (香港中转)
+  type: trojan
+  server: azhk22.nwncd.com
   port: 50041
-  server: azhk22.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: sga01.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 新加坡A02
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35332
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 新加坡A02
+  type: trojan
   server: sga02.nwncd.com
-  sni: sga02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 新加坡A02 (香港中转)
-  network: grpc
+  port: 35332
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: sga02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 新加坡A02 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50042
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: sga02.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 澳大利亚A01 (香港中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 澳大利亚A01 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50001
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: aua01.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 澳大利亚B01 (香港中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 澳大利亚B01 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50011
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: aub01.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 英国01 (国内中转)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 51101
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 英国01 (国内中转)
+  type: trojan
   server: tpahk.nwncd.com
-  sni: uka01.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 英国01 (香港中转)
-  network: grpc
+  port: 51101
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 50081
+  sni: uka01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 英国01 (香港中转)
+  type: trojan
   server: azhk22.nwncd.com
+  port: 50081
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: uka01.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 英国02
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 23357
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 英国02
+  type: trojan
   server: uka02.nwncd.com
-  sni: uka02.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 英国02 (香港中转)
-  network: grpc
+  port: 23357
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: uka02.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 英国02 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 35101
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: uka02.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 阿根廷01
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 463
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 阿根廷01
+  type: trojan
   server: newagt.nwncd.com
-  sni: newagt.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 阿根廷01 (香港中转)
-  network: grpc
+  port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: newagt.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 阿根廷01 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 30401
-  server: optimize-hk-relay.nwncd.com
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: newagt.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-08 恢复 (Z 韩国B02)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35420
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-08 恢复 (Z 韩国B02)
+  type: trojan
   server: kra04.nwncd.com
+  port: 35420
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: kra04.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-04 恢复 (Z 韩国B03)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35416
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-04 恢复 (Z 韩国B03)
+  type: trojan
   server: krb03.nwncd.com
+  port: 35416
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: krb03.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 01-04 恢复 (Z 韩国B04)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35418
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 01-04 恢复 (Z 韩国B04)
+  type: trojan
   server: krb04.nwncd.com
+  port: 35418
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: krb04.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 韩国B05
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35328
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 韩国B05
+  type: trojan
   server: krb05.nwncd.com
+  port: 35328
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: krb05.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 韩国B06
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35322
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 韩国B06
+  type: trojan
   server: krb06.nwncd.com
+  port: 35322
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: krb06.nwncd.com
-  type: trojan
   udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 12-27 恢复 (Z 韩国B07)
   network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 35322
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 12-27 恢复 (Z 韩国B07)
+  type: trojan
   server: krb07.nwncd.com
-  sni: krb07.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 12-27 恢复 (Z 韩国B07 (香港中转))
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 50117
-  server: optimize-hk-relay.nwncd.com
-  sni: krb07.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 12-27 恢复 (Z 韩国B08)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 35322
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: krb07.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 12-27 恢复 (Z 韩国B07 (香港中转))
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
+  port: 50117
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: krb07.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 12-27 恢复 (Z 韩国B08)
+  type: trojan
   server: krb08.nwncd.com
-  sni: krb08.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 将在 12-27 恢复 (Z 韩国B08 (香港中转))
-  network: grpc
+  port: 35322
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: krb08.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: 将在 12-27 恢复 (Z 韩国B08 (香港中转))
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
   port: 50118
-  server: optimize-hk-relay.nwncd.com
-  sni: krb08.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: Z 马来西亚A01 (香港中转)
-  network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 50051
-  server: optimize-hk-relay.nwncd.com
-  sni: mya01.nwncd.com
-  type: trojan
+  sni: krb08.nwncd.com
   udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: Z 马来西亚A01 (香港中转)
+  type: trojan
+  server: optimize-hk-relay.nwncd.com
+  port: 50051
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: mya01.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
 proxy-groups:
 - name: 🔰 节点选择
+  type: select
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
@@ -2288,220 +2290,220 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-  type: select
-- interval: 300
-  name: ♻️ 自动选择
-  proxies:
-  - 剩余 117 天 (2026-04-20 17:37)
-  - 剩余 2.35TB 流量
-  - A Series - HK 07
-  - A Series - HK 07 (中转)
-  - A Series - HK 11
-  - A Series - HK 11 (中转)
-  - A Series - HK 17
-  - A Series - HK 17 (中转)
-  - A Series - HK 22
-  - A Series - HK 22 (中转)
-  - A Series - HK 25
-  - A Series - HK 25 (中转)
-  - A Series - HK 30
-  - A Series - HK 30 (中转)
-  - A Series - HK 31
-  - A Series - HK 31 (中转)
-  - A Series - HK 32
-  - A Series - HK 32 (中转)
-  - A Series - HK 34
-  - A Series - HK 34 (中转)
-  - A Series - HK 39
-  - A Series - HK 39 (中转)
-  - A Series - HK 40
-  - A Series - HK 40 (中转)
-  - A Series - HK 41
-  - A Series - HK 41 (中转)
-  - A Series - HK 41 (Hysteria2)
-  - A Series - HK 43
-  - A Series - HK 43 (中转)
-  - A Series - HK 43 (Hysteria2)
-  - A Series - HK 44
-  - A Series - HK 44 (中转)
-  - A Series - HK 44 (Hysteria2)
-  - A Series - HK 45
-  - A Series - HK 45 (中转)
-  - A Series - HK 46
-  - A Series - HK 46 (中转)
-  - A Series - HK 47
-  - A Series - HK 47 (中转)
-  - A Series - HK 48
-  - A Series - HK 48 (中转)
-  - A Series - HK 49
-  - A Series - HK 49 (中转)
-  - A Series - HK 50
-  - A Series - HK 50 (中转)
-  - A Series - HK 51
-  - A Series - HK 51 (中转)
-  - AC Series - HK 01
-  - AC Series - HK 02
-  - 【B Series 最快 50Mbps】
-  - B Series - HK 02 (中转)
-  - B Series - HK 03 (中转)
-  - B Series - HK 04 (中转)
-  - B Series - HK 05 (中转)
-  - B Series - HK 13 (中转)
-  - B Series - HK 14 (中转)
-  - B Series - HK 15 (中转)
-  - B Series - HK 16 (中转)
-  - B Series - HK 18 (中转)
-  - B Series - HK 19 (中转)
-  - B Series - HK 21 (中转)
-  - B Series - HK 33 (中转)
-  - B Series - HK 35 (中转)
-  - B Series - HK 37 (中转)
-  - B Series - HK 38 (中转)
-  - C Series - HK 29
-  - C Series - HK 29 (中转)
-  - California (美国) A01
-  - 将在 12-28 恢复 (California (美国) A02)
-  - 将在 12-28 恢复 (California (美国) A03)
-  - 将在 12-28 恢复 (California (美国) A04)
-  - 将在 01-15 恢复 (California (美国) A05)
-  - 将在 01-16 恢复 (California (美国) A06)
-  - 将在 01-16 恢复 (California (美国) A07)
-  - 将在 01-16 恢复 (California (美国) A08)
-  - 将在 01-16 恢复 (California (美国) A09)
-  - 将在 01-04 恢复 (California (美国) A10)
-  - 将在 01-01 恢复 (California (美国) A11)
-  - 将在 01-01 恢复 (California (美国) A12)
-  - 将在 01-01 恢复 (California (美国) A13)
-  - 将在 01-01 恢复 (California (美国) A14)
-  - 将在 01-01 恢复 (California (美国) A15)
-  - California (美国) A16
-  - California (美国) A17
-  - 将在 01-12 恢复 (California (美国) A18)
-  - California (美国) A19
-  - 将在 01-12 恢复 (California (美国) A20)
-  - 将在 01-14 恢复 (California (美国) B01)
-  - 将在 01-14 恢复 (California (美国) B02)
-  - 将在 01-14 恢复 (California (美国) B03)
-  - 将在 01-14 恢复 (California (美国) B04)
-  - 将在 01-14 恢复 (California (美国) B05)
-  - California (美国) B06
-  - California (美国) B07
-  - California (美国) B08
-  - California (美国) B09
-  - California (美国) B10
-  - California (美国) B11
-  - California (美国) B12
-  - California (美国) B13
-  - California (美国) B14
-  - California (美国) B15
-  - California (美国) B16
-  - California (美国) B17
-  - California (美国) B18
-  - California (美国) B19
-  - California (美国) B20
-  - California (美国) B21
-  - California (美国) B22
-  - California (美国) B23
-  - California (美国) B24
-  - California (美国) B25
-  - California (美国) B26
-  - California (美国) B27
-  - 将在 01-02 恢复 (California (美国) E01)
-  - 将在 01-02 恢复 (California (美国) E01 (中转))
-  - 将在 12-26 恢复 (California (美国) E02)
-  - 将在 12-26 恢复 (California (美国) E02 (中转))
-  - California (美国) F01
-  - California (美国) G01
-  - California (美国) G02
-  - California (美国) G03
-  - California (美国) G04
-  - California (美国) G05
-  - California (美国) G06
-  - California (美国) G07
-  - 将在 12-28 恢复 (California (美国) G08)
-  - 将在 12-28 恢复 (California (美国) G09)
-  - California (美国) G10
-  - California (美国) G11
-  - California (美国) G12
-  - California (美国) G13
-  - California (美国) G14
-  - China Taiwan A01 (中转)
-  - China Taiwan B01
-  - China Taiwan B02
-  - China Taiwan B02 (中转)
-  - China Taiwan C01
-  - China Taiwan C01 (中转)
-  - China Taiwan C02
-  - China Taiwan C02 (中转)
-  - Hong Kong C01
-  - Hong Kong C01 (中转)
-  - Japan A01
-  - Japan A01 (中转)
-  - Japan A02
-  - Japan A02 (中转)
-  - Japan A03
-  - Japan A03 (中转)
-  - Japan A04
-  - Japan A04 (中转)
-  - Japan A05
-  - Japan A05 (中转)
-  - Japan A06
-  - Japan A06 (中转)
-  - Japan A07
-  - Japan A07 (中转)
-  - Japan A08
-  - Japan A08 (中转)
-  - Japan A09
-  - Japan A09 (中转)
-  - Japan A10
-  - Japan A10 (中转)
-  - Japan A11
-  - Japan A11 (中转)
-  - Japan A12
-  - Japan A12 (中转)
-  - Japan A13
-  - Japan A13 (中转)
-  - Japan A14
-  - Japan A14 (中转)
-  - Japan A15
-  - Japan A15 (中转)
-  - Japan B01
-  - Japan B01 (香港中转)
-  - Japan C01 (直连)
-  - Russia B01
-  - Z 土耳其01 (国内中转)
-  - Z 土耳其01 (香港中转)
-  - Z 土耳其02 (国内中转)
-  - Z 土耳其02 (香港中转)
-  - Z 土耳其03 (香港中转)
-  - Z 德国A01
-  - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
-  - Z 新加坡A01 (香港中转)
-  - Z 新加坡A02
-  - Z 新加坡A02 (香港中转)
-  - Z 澳大利亚A01 (香港中转)
-  - Z 澳大利亚B01 (香港中转)
-  - Z 英国01 (国内中转)
-  - Z 英国01 (香港中转)
-  - Z 英国02
-  - Z 英国02 (香港中转)
-  - Z 阿根廷01
-  - Z 阿根廷01 (香港中转)
-  - 将在 01-08 恢复 (Z 韩国B02)
-  - 将在 01-04 恢复 (Z 韩国B03)
-  - 将在 01-04 恢复 (Z 韩国B04)
-  - Z 韩国B05
-  - Z 韩国B06
-  - 将在 12-27 恢复 (Z 韩国B07)
-  - 将在 12-27 恢复 (Z 韩国B07 (香港中转))
-  - 将在 12-27 恢复 (Z 韩国B08)
-  - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
-  - Z 马来西亚A01 (香港中转)
+- name: ♻️ 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 2.35TB 流量
+  - A Series - HK 07
+  - A Series - HK 07 (中转)
+  - A Series - HK 11
+  - A Series - HK 11 (中转)
+  - A Series - HK 17
+  - A Series - HK 17 (中转)
+  - A Series - HK 22
+  - A Series - HK 22 (中转)
+  - A Series - HK 25
+  - A Series - HK 25 (中转)
+  - A Series - HK 30
+  - A Series - HK 30 (中转)
+  - A Series - HK 31
+  - A Series - HK 31 (中转)
+  - A Series - HK 32
+  - A Series - HK 32 (中转)
+  - A Series - HK 34
+  - A Series - HK 34 (中转)
+  - A Series - HK 39
+  - A Series - HK 39 (中转)
+  - A Series - HK 40
+  - A Series - HK 40 (中转)
+  - A Series - HK 41
+  - A Series - HK 41 (中转)
+  - A Series - HK 41 (Hysteria2)
+  - A Series - HK 43
+  - A Series - HK 43 (中转)
+  - A Series - HK 43 (Hysteria2)
+  - A Series - HK 44
+  - A Series - HK 44 (中转)
+  - A Series - HK 44 (Hysteria2)
+  - A Series - HK 45
+  - A Series - HK 45 (中转)
+  - A Series - HK 46
+  - A Series - HK 46 (中转)
+  - A Series - HK 47
+  - A Series - HK 47 (中转)
+  - A Series - HK 48
+  - A Series - HK 48 (中转)
+  - A Series - HK 49
+  - A Series - HK 49 (中转)
+  - A Series - HK 50
+  - A Series - HK 50 (中转)
+  - A Series - HK 51
+  - A Series - HK 51 (中转)
+  - AC Series - HK 01
+  - AC Series - HK 02
+  - 【B Series 最快 50Mbps】
+  - B Series - HK 02 (中转)
+  - B Series - HK 03 (中转)
+  - B Series - HK 04 (中转)
+  - B Series - HK 05 (中转)
+  - B Series - HK 13 (中转)
+  - B Series - HK 14 (中转)
+  - B Series - HK 15 (中转)
+  - B Series - HK 16 (中转)
+  - B Series - HK 18 (中转)
+  - B Series - HK 19 (中转)
+  - B Series - HK 21 (中转)
+  - B Series - HK 33 (中转)
+  - B Series - HK 35 (中转)
+  - B Series - HK 37 (中转)
+  - B Series - HK 38 (中转)
+  - C Series - HK 29
+  - C Series - HK 29 (中转)
+  - California (美国) A01
+  - 将在 12-28 恢复 (California (美国) A02)
+  - 将在 12-28 恢复 (California (美国) A03)
+  - 将在 12-28 恢复 (California (美国) A04)
+  - 将在 01-15 恢复 (California (美国) A05)
+  - 将在 01-16 恢复 (California (美国) A06)
+  - 将在 01-16 恢复 (California (美国) A07)
+  - 将在 01-16 恢复 (California (美国) A08)
+  - 将在 01-16 恢复 (California (美国) A09)
+  - 将在 01-04 恢复 (California (美国) A10)
+  - 将在 01-01 恢复 (California (美国) A11)
+  - 将在 01-01 恢复 (California (美国) A12)
+  - 将在 01-01 恢复 (California (美国) A13)
+  - 将在 01-01 恢复 (California (美国) A14)
+  - 将在 01-01 恢复 (California (美国) A15)
+  - California (美国) A16
+  - California (美国) A17
+  - 将在 01-12 恢复 (California (美国) A18)
+  - California (美国) A19
+  - 将在 01-12 恢复 (California (美国) A20)
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
+  - 将在 01-14 恢复 (California (美国) B03)
+  - 将在 01-14 恢复 (California (美国) B04)
+  - 将在 01-14 恢复 (California (美国) B05)
+  - California (美国) B06
+  - California (美国) B07
+  - California (美国) B08
+  - California (美国) B09
+  - California (美国) B10
+  - California (美国) B11
+  - California (美国) B12
+  - California (美国) B13
+  - California (美国) B14
+  - California (美国) B15
+  - California (美国) B16
+  - California (美国) B17
+  - California (美国) B18
+  - California (美国) B19
+  - California (美国) B20
+  - California (美国) B21
+  - California (美国) B22
+  - California (美国) B23
+  - California (美国) B24
+  - California (美国) B25
+  - California (美国) B26
+  - California (美国) B27
+  - 将在 01-02 恢复 (California (美国) E01)
+  - 将在 01-02 恢复 (California (美国) E01 (中转))
+  - 将在 12-26 恢复 (California (美国) E02)
+  - 将在 12-26 恢复 (California (美国) E02 (中转))
+  - California (美国) F01
+  - California (美国) G01
+  - California (美国) G02
+  - California (美国) G03
+  - California (美国) G04
+  - California (美国) G05
+  - California (美国) G06
+  - California (美国) G07
+  - 将在 12-28 恢复 (California (美国) G08)
+  - 将在 12-28 恢复 (California (美国) G09)
+  - California (美国) G10
+  - California (美国) G11
+  - California (美国) G12
+  - California (美国) G13
+  - California (美国) G14
+  - China Taiwan A01 (中转)
+  - China Taiwan B01
+  - China Taiwan B02
+  - China Taiwan B02 (中转)
+  - China Taiwan C01
+  - China Taiwan C01 (中转)
+  - China Taiwan C02
+  - China Taiwan C02 (中转)
+  - Hong Kong C01
+  - Hong Kong C01 (中转)
+  - Japan A01
+  - Japan A01 (中转)
+  - Japan A02
+  - Japan A02 (中转)
+  - Japan A03
+  - Japan A03 (中转)
+  - Japan A04
+  - Japan A04 (中转)
+  - Japan A05
+  - Japan A05 (中转)
+  - Japan A06
+  - Japan A06 (中转)
+  - Japan A07
+  - Japan A07 (中转)
+  - Japan A08
+  - Japan A08 (中转)
+  - Japan A09
+  - Japan A09 (中转)
+  - Japan A10
+  - Japan A10 (中转)
+  - Japan A11
+  - Japan A11 (中转)
+  - Japan A12
+  - Japan A12 (中转)
+  - Japan A13
+  - Japan A13 (中转)
+  - Japan A14
+  - Japan A14 (中转)
+  - Japan A15
+  - Japan A15 (中转)
+  - Japan B01
+  - Japan B01 (香港中转)
+  - Japan C01 (直连)
+  - Russia B01
+  - Z 土耳其01 (国内中转)
+  - Z 土耳其01 (香港中转)
+  - Z 土耳其02 (国内中转)
+  - Z 土耳其02 (香港中转)
+  - Z 土耳其03 (香港中转)
+  - Z 德国A01
+  - Z 德国A01 (香港中转)
+  - Z 意大利A01
+  - Z 意大利A01 (香港中转)
+  - Z 新加坡A01 (香港中转)
+  - Z 新加坡A02
+  - Z 新加坡A02 (香港中转)
+  - Z 澳大利亚A01 (香港中转)
+  - Z 澳大利亚B01 (香港中转)
+  - Z 英国01 (国内中转)
+  - Z 英国01 (香港中转)
+  - Z 英国02
+  - Z 英国02 (香港中转)
+  - Z 阿根廷01
+  - Z 阿根廷01 (香港中转)
+  - 将在 01-08 恢复 (Z 韩国B02)
+  - 将在 01-04 恢复 (Z 韩国B03)
+  - 将在 01-04 恢复 (Z 韩国B04)
+  - Z 韩国B05
+  - Z 韩国B06
+  - 将在 12-27 恢复 (Z 韩国B07)
+  - 将在 12-27 恢复 (Z 韩国B07 (香港中转))
+  - 将在 12-27 恢复 (Z 韩国B08)
+  - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
+  - Z 马来西亚A01 (香港中转)
 - name: 🎥 NETFLIX
+  type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
@@ -2713,20 +2715,20 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-  type: select
 - name: ⛔️ 广告拦截
+  type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  type: select
 - name: 🚫 运营劫持
+  type: select
   proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
-  type: select
 - name: 🌍 国外媒体
+  type: select
   proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
@@ -2938,13 +2940,13 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-  type: select
 - name: 🌏 国内媒体
+  type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  type: select
 - name: Ⓜ️ 微软服务
+  type: select
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
@@ -3155,8 +3157,8 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-  type: select
 - name: 📲 电报信息
+  type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
@@ -3367,8 +3369,8 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-  type: select
 - name: 🍎 苹果服务
+  type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
@@ -3580,17 +3582,17 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-  type: select
 - name: 🎯 全球直连
+  type: select
   proxies:
   - DIRECT
-  type: select
 - name: 🛑 全球拦截
+  type: select
   proxies:
   - REJECT
   - DIRECT
-  type: select
 - name: 🐟 漏网之鱼
+  type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
@@ -3802,8 +3804,8 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-  type: select
 - name: 🤖 OpenAI
+  type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
@@ -3915,8 +3917,8 @@ proxy-groups:
   - Z 韩国B05
   - Z 韩国B06
   - Z 马来西亚A01 (香港中转)
-  type: select
 - name: 💡 Gemini
+  type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
@@ -3963,8 +3965,8 @@ proxy-groups:
   - Z 阿根廷01
   - Z 韩国B05
   - Z 韩国B06
-  type: select
 - name: 🎮 Steam
+  type: select
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
@@ -4176,7 +4178,6 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-  type: select
 - name: 💡 测试策略组
   proxies:
   - 🔰 节点选择
@@ -14508,4 +14509,3 @@ rules:
 - DOMAIN-SUFFIX,openai.com,Proxy
 - DOMAIN-SUFFIX,anthropic.com,Proxy
 - GEOIP,CN,DIRECT
-socks-port: 7891
