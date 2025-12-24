@@ -2,13 +2,10 @@ import yaml
 
 def deep_merge(base, override):
     for key, value in override.items():
-        if key in base:
-            if isinstance(base[key], dict) and isinstance(value, dict):
-                deep_merge(base[key], value)
-            elif isinstance(base[key], list) and isinstance(value, list):
-                base[key] = base[key] + value
-            else:
-                base[key] = value
+        if isinstance(base.get(key), dict) and isinstance(value, dict):
+            deep_merge(base[key], value)
+        elif isinstance(base.get(key), list) and isinstance(value, list):
+            base[key].extend(value)
         else:
             base[key] = value
     return base
