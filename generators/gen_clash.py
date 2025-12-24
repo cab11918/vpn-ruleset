@@ -23,7 +23,7 @@ def generate_clash(airport_file):
     result = deep_merge(airport, user_config)
     
     with open('output/clash.yaml', 'w') as f:
-        yaml.dump(result, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
+        yaml.dump(result, f, allow_unicode=True, sort_keys=False, default_flow_style=False, default_style="'")
 
 if __name__ == '__main__':
     generate_clash('output/airport.yaml')
