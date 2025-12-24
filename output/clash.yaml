@@ -19,9 +19,9 @@ proxies:
   name: 剩余 2.35TB 流量
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20841
+  port: 20839
   server: tpahk.nwncd.com
-  sni: azhk41.nwncd.com
+  sni: azhk39.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -29,9 +29,9 @@ proxies:
   name: A Series - HK 07
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20840
+  port: 20834
   server: tpahk.nwncd.com
-  sni: azhk40.nwncd.com
+  sni: azhk34.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -39,9 +39,9 @@ proxies:
   name: A Series - HK 07 (中转)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20848
+  port: 20850
   server: tpahk.nwncd.com
-  sni: azhk48.nwncd.com
+  sni: azhk50.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -278,7 +278,7 @@ proxies:
   name: A Series - HK 43
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 1079
+  port: 1091
   server: azhk43.nwncd.com
   sni: azhk43.nwncd.com
   type: trojan
@@ -675,7 +675,7 @@ proxies:
   cipher: auto
   name: California (美国) A01
   network: ws
-  port: 38827
+  port: 38839
   server: usa01.nwncd.com
   servername: portal.azure.com
   skip-cert-verify: true
@@ -1988,7 +1988,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: mygrpc
-  name: Z 韩国B03
+  name: 将在 01-04 恢复 (Z 韩国B03)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 35416
@@ -2279,7 +2279,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
@@ -2490,7 +2490,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
@@ -2704,7 +2704,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
@@ -2929,7 +2929,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
@@ -3146,7 +3146,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
@@ -3358,7 +3358,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
@@ -3571,7 +3571,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
@@ -3793,7 +3793,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
@@ -3912,7 +3912,6 @@ proxy-groups:
   - Z 英国02 (香港中转)
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
-  - Z 韩国B03
   - Z 韩国B05
   - Z 韩国B06
   - Z 马来西亚A01 (香港中转)
@@ -3925,6 +3924,7 @@ proxy-groups:
   - California (美国) A16
   - California (美国) A17
   - California (美国) A19
+  - California (美国) B06
   - California (美国) B07
   - California (美国) B08
   - California (美国) B09
@@ -4169,7 +4169,7 @@ proxy-groups:
   - Z 阿根廷01
   - Z 阿根廷01 (香港中转)
   - 将在 01-08 恢复 (Z 韩国B02)
-  - Z 韩国B03
+  - 将在 01-04 恢复 (Z 韩国B03)
   - 将在 01-04 恢复 (Z 韩国B04)
   - Z 韩国B05
   - Z 韩国B06
