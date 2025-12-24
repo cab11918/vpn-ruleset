@@ -1,6 +1,5 @@
 import yaml
 import requests
-import sys
 
 def deep_merge(base, override):
     for key, value in override.items():
@@ -29,4 +28,4 @@ def generate_clash(url):
         yaml.dump(result, f, allow_unicode=True, sort_keys=False, default_flow_style=False)
 
 if __name__ == '__main__':
-    generate_clash(sys.argv[1])
+    generate_clash('output/airport.yaml')
