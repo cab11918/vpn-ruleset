@@ -9,14 +9,24 @@ proxies:
   name: 剩余 117 天 (2026-04-20 17:37)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20849
+  port: 20850
   server: tpahk.nwncd.com
-  sni: azhk49.nwncd.com
+  sni: azhk50.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
     grpc-service-name: mygrpc
   name: 剩余 2.35TB 流量
+  network: grpc
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  port: 20847
+  server: tpahk.nwncd.com
+  sni: azhk47.nwncd.com
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: mygrpc
+  name: A Series - HK 07
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 20851
@@ -26,22 +36,12 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: mygrpc
-  name: A Series - HK 07
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20850
-  server: tpahk.nwncd.com
-  sni: azhk50.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
   name: A Series - HK 07 (中转)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20848
+  port: 20849
   server: tpahk.nwncd.com
-  sni: azhk48.nwncd.com
+  sni: azhk49.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
