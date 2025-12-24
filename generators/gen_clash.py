@@ -6,7 +6,7 @@ def deep_merge(base, override):
             if isinstance(base[key], dict) and isinstance(value, dict):
                 deep_merge(base[key], value)
             elif isinstance(base[key], list) and isinstance(value, list):
-                base[key] = value + base[key]
+                base[key] = base[key] + value
             else:
                 base[key] = value
         else:
