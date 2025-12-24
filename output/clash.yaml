@@ -9,9 +9,9 @@ proxies:
   name: 剩余 117 天 (2026-04-20 17:37)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20848
+  port: 20851
   server: tpahk.nwncd.com
-  sni: azhk48.nwncd.com
+  sni: azhk51.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -19,9 +19,9 @@ proxies:
   name: 剩余 2.35TB 流量
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20839
+  port: 20847
   server: tpahk.nwncd.com
-  sni: azhk39.nwncd.com
+  sni: azhk47.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -29,9 +29,9 @@ proxies:
   name: A Series - HK 07
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20834
+  port: 20849
   server: tpahk.nwncd.com
-  sni: azhk34.nwncd.com
+  sni: azhk49.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -39,9 +39,9 @@ proxies:
   name: A Series - HK 07 (中转)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20850
+  port: 20849
   server: tpahk.nwncd.com
-  sni: azhk50.nwncd.com
+  sni: azhk49.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -2077,6 +2077,12 @@ proxies:
   type: trojan
   udp: true
 proxy-groups:
+- name: 💡 测试策略组
+  type: select
+  proxies:
+  - 🔰 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
 - name: 🔰 节点选择
   proxies:
   - ♻️ 自动选择
@@ -4180,7 +4186,9 @@ proxy-groups:
   - Z 马来西亚A01 (香港中转)
   type: select
 rules:
-- DOMAIN-SUFFIX,ads.example.com,REJECT
+- DOMAIN-SUFFIX,openai.com,Proxy
+- DOMAIN-SUFFIX,anthropic.com,Proxy
+- GEOIP,CN,DIRECT
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
 - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
