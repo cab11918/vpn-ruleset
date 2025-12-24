@@ -8,9 +8,9 @@ proxies:
 - name: 剩余 117 天 (2026-04-20 17:37)
   type: trojan
   server: tpahk.nwncd.com
-  port: 20849
+  port: 20841
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk49.nwncd.com
+  sni: azhk41.nwncd.com
   udp: true
   network: grpc
   grpc-opts:
@@ -18,9 +18,9 @@ proxies:
 - name: 剩余 2.35TB 流量
   type: trojan
   server: tpahk.nwncd.com
-  port: 20839
+  port: 20840
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk39.nwncd.com
+  sni: azhk40.nwncd.com
   udp: true
   network: grpc
   grpc-opts:
@@ -38,9 +38,9 @@ proxies:
 - name: A Series - HK 07 (中转)
   type: trojan
   server: tpahk.nwncd.com
-  port: 20839
+  port: 20847
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk39.nwncd.com
+  sni: azhk47.nwncd.com
   udp: true
   network: grpc
   grpc-opts:
