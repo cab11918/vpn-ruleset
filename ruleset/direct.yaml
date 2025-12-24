@@ -1,7 +1,0 @@
-rules:
-  - type: domain-suffix
-    value: cn
-    policy: direct
-  - type: geoip
-    value: CN
-    policy: direct

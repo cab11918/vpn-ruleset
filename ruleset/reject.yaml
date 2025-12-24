@@ -1,4 +1,0 @@
-rules:
-  - type: domain-suffix
-    value: ads.example.com
-    policy: reject

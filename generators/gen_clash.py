@@ -5,7 +5,7 @@ POLICY_MAP = {'proxy': 'Proxy', 'direct': 'DIRECT', 'reject': 'REJECT'}
 
 def load_rules():
     rules = []
-    for f in sorted(glob.glob('ruleset/*.yaml')):
+    for f in sorted(glob.glob('ruleset/clash.yaml')):
         with open(f) as file:
             data = yaml.safe_load(file)
             if data and 'rules' in data:
@@ -15,7 +15,7 @@ def load_rules():
 def convert_rule(rule):
     t = rule['type'].upper().replace('-', '-')
     v = rule['value']
-    p = POLICY_MAP[rule['policy']]
+    p = POLICY_MAP.get(rule['policy'], rule['policy'])
     
     if t == 'DOMAIN':
         return f'DOMAIN,{v},{p}'
