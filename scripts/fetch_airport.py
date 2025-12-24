@@ -14,4 +14,4 @@ if __name__ == '__main__':
     config = fetch_airport(clash_url)
     os.makedirs('output', exist_ok=True)
     with open('output/airport.yaml', 'w') as f:
-        yaml.dump(config, f, allow_unicode=True)
+        yaml.dump(config, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
