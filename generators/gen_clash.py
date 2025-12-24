@@ -1,44 +1,32 @@
 import yaml
-import glob
 
-POLICY_MAP = {'proxy': 'Proxy', 'direct': 'DIRECT', 'reject': 'REJECT'}
-
-def load_rules():
-    rules = []
-    for f in sorted(glob.glob('ruleset/clash.yaml')):
-        with open(f) as file:
-            data = yaml.safe_load(file)
-            if data and 'rules' in data:
-                rules.extend(data['rules'])
-    return rules
-
-def convert_rule(rule):
-    t = rule['type'].upper().replace('-', '-')
-    v = rule['value']
-    p = POLICY_MAP.get(rule['policy'], rule['policy'])
-    
-    if t == 'DOMAIN':
-        return f'DOMAIN,{v},{p}'
-    elif t == 'DOMAIN-SUFFIX':
-        return f'DOMAIN-SUFFIX,{v},{p}'
-    elif t == 'IP-CIDR':
-        return f'IP-CIDR,{v},{p}'
-    elif t == 'GEOIP':
-        return f'GEOIP,{v},{p}'
-    return None
+def deep_merge(base, override):
+    for key, value in override.items():
+        if key in base:
+            if isinstance(base[key], dict) and isinstance(value, dict):
+                deep_merge(base[key], value)
+            elif isinstance(base[key], list) and isinstance(value, list):
+                base[key] = value + base[key]
+            else:
+                base[key] = value
+        else:
+            base[key] = value
+    return base
 
 def generate_clash():
     with open('output/airport.yaml') as f:
         airport = yaml.safe_load(f)
     
-    user_rules = [convert_rule(r) for r in load_rules()]
-    user_rules = [r for r in user_rules if r]
+    try:
+        with open('ruleset/clash.yaml') as f:
+            user_config = yaml.safe_load(f) or {}
+    except FileNotFoundError:
+        user_config = {}
     
-    airport_rules = airport.get('rules', [])
-    airport['rules'] = user_rules + airport_rules
+    result = deep_merge(airport, user_config)
     
     with open('output/clash.yaml', 'w') as f:
-        yaml.dump(airport, f, allow_unicode=True, sort_keys=False)
+        yaml.dump(result, f, allow_unicode=True, sort_keys=False)
 
 if __name__ == '__main__':
     generate_clash()
