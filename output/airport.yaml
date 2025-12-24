@@ -9,9 +9,9 @@ proxies:
   name: 剩余 117 天 (2026-04-20 17:37)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20839
+  port: 20849
   server: tpahk.nwncd.com
-  sni: azhk39.nwncd.com
+  sni: azhk49.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -19,9 +19,9 @@ proxies:
   name: 剩余 2.35TB 流量
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20834
+  port: 20851
   server: tpahk.nwncd.com
-  sni: azhk34.nwncd.com
+  sni: azhk51.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -29,9 +29,9 @@ proxies:
   name: A Series - HK 07
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20849
+  port: 20850
   server: tpahk.nwncd.com
-  sni: azhk49.nwncd.com
+  sni: azhk50.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -278,7 +278,7 @@ proxies:
   name: A Series - HK 43
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 1091
+  port: 1093
   server: azhk43.nwncd.com
   sni: azhk43.nwncd.com
   type: trojan
@@ -675,7 +675,7 @@ proxies:
   cipher: auto
   name: California (美国) A01
   network: ws
-  port: 38839
+  port: 38841
   server: usa01.nwncd.com
   servername: portal.azure.com
   skip-cert-verify: true
@@ -3959,9 +3959,7 @@ proxy-groups:
   - Japan A11 (中转)
   - Japan A12
   - Japan A12 (中转)
-  - Japan B01
   - Z 意大利A01
-  - Z 新加坡A02
   - Z 阿根廷01
   - Z 韩国B05
   - Z 韩国B06
