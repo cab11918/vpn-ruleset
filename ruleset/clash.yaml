@@ -1,10 +1,10 @@
 proxy-groups:
   - name: 💡 测试策略组
-    type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+    type: select
 
 rules:
   - DOMAIN-SUFFIX,openai.com,Proxy
