@@ -6,17 +6,7 @@ port: 7890
 proxies:
 - grpc-opts:
     grpc-service-name: mygrpc
-  name: 剩余 118 天 (2026-04-20 13:37)
-  network: grpc
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20851
-  server: tpahk.nwncd.com
-  sni: azhk51.nwncd.com
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: mygrpc
-  name: 剩余 2.35TB 流量
+  name: 剩余 117 天 (2026-04-20 17:37)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 20848
@@ -26,12 +16,22 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: mygrpc
+  name: 剩余 2.35TB 流量
+  network: grpc
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  port: 20841
+  server: tpahk.nwncd.com
+  sni: azhk41.nwncd.com
+  type: trojan
+  udp: true
+- grpc-opts:
+    grpc-service-name: mygrpc
   name: A Series - HK 07
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20847
+  port: 20840
   server: tpahk.nwncd.com
-  sni: azhk47.nwncd.com
+  sni: azhk40.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -39,9 +39,9 @@ proxies:
   name: A Series - HK 07 (中转)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 20834
+  port: 20848
   server: tpahk.nwncd.com
-  sni: azhk34.nwncd.com
+  sni: azhk48.nwncd.com
   type: trojan
   udp: true
 - grpc-opts:
@@ -278,7 +278,7 @@ proxies:
   name: A Series - HK 43
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  port: 1043
+  port: 1079
   server: azhk43.nwncd.com
   sni: azhk43.nwncd.com
   type: trojan
@@ -675,7 +675,7 @@ proxies:
   cipher: auto
   name: California (美国) A01
   network: ws
-  port: 38797
+  port: 38827
   server: usa01.nwncd.com
   servername: portal.azure.com
   skip-cert-verify: true
@@ -729,7 +729,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: mygrpc
-  name: California (美国) A06
+  name: 将在 01-16 恢复 (California (美国) A06)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 461
@@ -879,7 +879,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: mygrpc
-  name: California (美国) B01
+  name: 将在 01-14 恢复 (California (美国) B01)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 463
@@ -889,7 +889,7 @@ proxies:
   udp: true
 - grpc-opts:
     grpc-service-name: mygrpc
-  name: California (美国) B02
+  name: 将在 01-14 恢复 (California (美国) B02)
   network: grpc
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   port: 463
@@ -2081,7 +2081,7 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -2153,7 +2153,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -2168,8 +2168,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -2292,7 +2292,7 @@ proxy-groups:
 - interval: 300
   name: ♻️ 自动选择
   proxies:
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -2364,7 +2364,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -2379,8 +2379,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -2506,7 +2506,7 @@ proxy-groups:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -2578,7 +2578,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -2593,8 +2593,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -2731,7 +2731,7 @@ proxy-groups:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -2803,7 +2803,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -2818,8 +2818,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -2948,7 +2948,7 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -3020,7 +3020,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -3035,8 +3035,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -3160,7 +3160,7 @@ proxy-groups:
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -3232,7 +3232,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -3247,8 +3247,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -3373,7 +3373,7 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -3445,7 +3445,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -3460,8 +3460,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -3595,7 +3595,7 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -3667,7 +3667,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -3682,8 +3682,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -3808,16 +3808,13 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - 【B Series 最快 50Mbps】
   - California (美国) A01
-  - California (美国) A06
   - California (美国) A16
   - California (美国) A17
   - California (美国) A19
-  - California (美国) B01
-  - California (美国) B02
   - California (美国) B06
   - California (美国) B07
   - California (美国) B08
@@ -3925,11 +3922,9 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - California (美国) A06
   - California (美国) A16
   - California (美国) A17
   - California (美国) A19
-  - California (美国) B02
   - California (美国) B07
   - California (美国) B08
   - California (美国) B09
@@ -3976,7 +3971,7 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 剩余 118 天 (2026-04-20 13:37)
+  - 剩余 117 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -4048,7 +4043,7 @@ proxy-groups:
   - 将在 12-28 恢复 (California (美国) A03)
   - 将在 12-28 恢复 (California (美国) A04)
   - 将在 01-15 恢复 (California (美国) A05)
-  - California (美国) A06
+  - 将在 01-16 恢复 (California (美国) A06)
   - 将在 01-16 恢复 (California (美国) A07)
   - 将在 01-16 恢复 (California (美国) A08)
   - 将在 01-16 恢复 (California (美国) A09)
@@ -4063,8 +4058,8 @@ proxy-groups:
   - 将在 01-12 恢复 (California (美国) A18)
   - California (美国) A19
   - 将在 01-12 恢复 (California (美国) A20)
-  - California (美国) B01
-  - California (美国) B02
+  - 将在 01-14 恢复 (California (美国) B01)
+  - 将在 01-14 恢复 (California (美国) B02)
   - 将在 01-14 恢复 (California (美国) B03)
   - 将在 01-14 恢复 (California (美国) B04)
   - 将在 01-14 恢复 (California (美国) B05)
@@ -4185,10 +4180,6 @@ proxy-groups:
   - Z 马来西亚A01 (香港中转)
   type: select
 rules:
-- DOMAIN-SUFFIX,cn,DIRECT
-- GEOIP,CN,DIRECT
-- DOMAIN-SUFFIX,openai.com,Proxy
-- DOMAIN-SUFFIX,anthropic.com,Proxy
 - DOMAIN-SUFFIX,ads.example.com,REJECT
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
