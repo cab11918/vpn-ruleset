@@ -1,6 +1,11 @@
 name: Build Rules
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'ruleset/**'
   schedule:
     - cron: '0 0 * * *'
   workflow_dispatch:
@@ -22,6 +27,8 @@ jobs:
       - run: python scripts/fetch_airport.py ${{ secrets.AIRPORT_SUB }}
 
       - run: python generators/gen_clash.py
+      
+      - run: python generators/gen_shadowrocket.py
       
       - run: |
           git config user.name github-actions
