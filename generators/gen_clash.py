@@ -1,5 +1,4 @@
 import yaml
-import requests
 
 def deep_merge(base, override):
     for key, value in override.items():
@@ -11,10 +10,9 @@ def deep_merge(base, override):
             base[key] = value
     return base
 
-def generate_clash(url):
-    resp = requests.get(url, timeout=30)
-    resp.raise_for_status()
-    airport = yaml.safe_load(resp.text)
+def generate_clash(airport_file):
+    with open(airport_file) as f:
+        airport = yaml.safe_load(f)
     
     try:
         with open('ruleset/clash.yaml') as f:
