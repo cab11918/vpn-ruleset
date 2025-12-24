@@ -4178,12 +4178,6 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-- name: 💡 测试策略组
-  proxies:
-  - 🔰 节点选择
-  - 🎯 全球直连
-  - ♻️ 自动选择
-  type: select
 rules:
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
@@ -14506,6 +14500,3 @@ rules:
 - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
 - GEOIP,CN,🎯 全球直连
 - MATCH,🐟 漏网之鱼
-- DOMAIN-SUFFIX,openai.com,Proxy
-- DOMAIN-SUFFIX,anthropic.com,Proxy
-- GEOIP,CN,DIRECT
