@@ -13,7 +13,7 @@ def generate_clash(airport_file):
     airport_lines = airport_content.split('\n')
     user_lines = user_content.split('\n')
     
-    # 解析用户配置的sections
+    # 解析用户配置
     user_sections = {}
     i = 0
     while i < len(user_lines):
@@ -50,7 +50,7 @@ def generate_clash(airport_file):
             key = stripped.split(':')[0].strip()
             if key in user_sections:
                 airport_base_indent = len(line) - len(stripped)
-                # 跳过机场section内容
+                # 跳过机场section
                 while i < len(airport_lines):
                     next_line = airport_lines[i]
                     next_stripped = next_line.lstrip()
@@ -60,13 +60,17 @@ def generate_clash(airport_file):
                             break
                     result_lines.append(next_line)
                     i += 1
-                # 追加用户内容，调整缩进
+                # 追加用户内容
                 section_lines, user_base_indent = user_sections[key]
                 indent_diff = airport_base_indent - user_base_indent
                 for user_line in section_lines:
                     if user_line.strip():
-                        adjusted_line = ' ' * indent_diff + user_line if indent_diff > 0 else user_line[-indent_diff:] if indent_diff < 0 else user_line
-                        result_lines.append(adjusted_line)
+                        if indent_diff > 0:
+                            result_lines.append(' ' * indent_diff + user_line)
+                        elif indent_diff < 0:
+                            result_lines.append(user_line[abs(indent_diff):])
+                        else:
+                            result_lines.append(user_line)
                     else:
                         result_lines.append(user_line)
     
