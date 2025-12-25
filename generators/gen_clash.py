@@ -60,10 +60,17 @@ def generate_clash(airport_file):
                             break
                     result_lines.append(next_line)
                     i += 1
-                # 追加用户内容，减少1个空格缩进
+                # 追加用户内容
                 for user_line in user_sections[key]:
                     if user_line and user_line[0] == ' ':
-                        result_lines.append(user_line[1:])
+                        adjusted = user_line[1:]
+                        # 如果是 "  - name:" 格式，拆成两行
+                        if adjusted.lstrip().startswith('- ') and ':' in adjusted:
+                            indent = len(adjusted) - len(adjusted.lstrip())
+                            result_lines.append(' ' * indent + '-')
+                            result_lines.append(' ' * (indent + 1) + adjusted.lstrip()[2:])
+                        else:
+                            result_lines.append(adjusted)
                     else:
                         result_lines.append(user_line)
     
