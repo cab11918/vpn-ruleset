@@ -22,18 +22,18 @@ def generate_clash(airport_file):
         if ':' in stripped and not stripped.startswith('-') and not stripped.startswith('#'):
             key = stripped.split(':')[0].strip()
             section_lines = []
-            user_base_indent = len(line) - len(stripped)
+            base_indent = len(line) - len(stripped)
             i += 1
             while i < len(user_lines):
                 next_line = user_lines[i]
                 next_stripped = next_line.lstrip()
                 if next_stripped and not next_stripped.startswith('#'):
                     next_indent = len(next_line) - len(next_stripped)
-                    if next_indent <= user_base_indent and ':' in next_stripped and not next_stripped.startswith('-'):
+                    if next_indent <= base_indent and ':' in next_stripped and not next_stripped.startswith('-'):
                         break
                 section_lines.append(next_line)
                 i += 1
-            user_sections[key] = (section_lines, user_base_indent)
+            user_sections[key] = section_lines
         else:
             i += 1
     
@@ -49,28 +49,21 @@ def generate_clash(airport_file):
         if ':' in stripped and not stripped.startswith('-') and not stripped.startswith('#'):
             key = stripped.split(':')[0].strip()
             if key in user_sections:
-                airport_base_indent = len(line) - len(stripped)
+                base_indent = len(line) - len(stripped)
                 # 跳过机场section
                 while i < len(airport_lines):
                     next_line = airport_lines[i]
                     next_stripped = next_line.lstrip()
                     if next_stripped and not next_stripped.startswith('#'):
                         next_indent = len(next_line) - len(next_stripped)
-                        if next_indent <= airport_base_indent and ':' in next_stripped and not next_stripped.startswith('-'):
+                        if next_indent <= base_indent and ':' in next_stripped and not next_stripped.startswith('-'):
                             break
                     result_lines.append(next_line)
                     i += 1
-                # 追加用户内容
-                section_lines, user_base_indent = user_sections[key]
-                indent_diff = airport_base_indent - user_base_indent
-                for user_line in section_lines:
-                    if user_line.strip():
-                        if indent_diff > 0:
-                            result_lines.append(' ' * indent_diff + user_line)
-                        elif indent_diff < 0:
-                            result_lines.append(user_line[abs(indent_diff):])
-                        else:
-                            result_lines.append(user_line)
+                # 追加用户内容，减少1个空格缩进
+                for user_line in user_sections[key]:
+                    if user_line and user_line[0] == ' ':
+                        result_lines.append(user_line[1:])
                     else:
                         result_lines.append(user_line)
     
