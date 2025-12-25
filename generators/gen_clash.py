@@ -1,35 +1,45 @@
-from ruamel.yaml import YAML
-
-def deep_merge(base, override):
-    for key, value in override.items():
-        if isinstance(base.get(key), dict) and isinstance(value, dict):
-            deep_merge(base[key], value)
-        elif isinstance(base.get(key), list) and isinstance(value, list):
-            base[key].extend(value)
-        else:
-            base[key] = value
-    return base
+import yaml
 
 def generate_clash(airport_file):
-    yaml = YAML()
-    yaml.preserve_quotes = True
-    yaml.default_flow_style = False
-    
     with open(airport_file) as f:
-        airport = yaml.load(f)
+        airport_content = f.read()
     
     try:
         with open('ruleset/clash.yaml') as f:
-            user_config = yaml.load(f)
-            if user_config is None:
-                user_config = {}
+            user_config = yaml.safe_load(f) or {}
     except FileNotFoundError:
         user_config = {}
     
-    result = deep_merge(airport, user_config)
+    if not user_config:
+        with open('output/clash.yaml', 'w') as f:
+            f.write(airport_content)
+        return
+    
+    lines = airport_content.split('\n')
+    result_lines = []
+    i = 0
+    
+    while i < len(lines):
+        line = lines[i]
+        stripped = line.lstrip()
+        
+        if ':' in stripped and not stripped.startswith('-'):
+            key = stripped.split(':')[0].strip()
+            if key in user_config:
+                indent = len(line) - len(stripped)
+                value = user_config[key]
+                if isinstance(value, str):
+                    result_lines.append(' ' * indent + f"{key}: {yaml.dump(value, default_style=\"'\").strip()}")
+                else:
+                    result_lines.append(' ' * indent + f"{key}: {value}")
+                i += 1
+                continue
+        
+        result_lines.append(line)
+        i += 1
     
     with open('output/clash.yaml', 'w') as f:
-        yaml.dump(result, f)
+        f.write('\n'.join(result_lines))
 
 if __name__ == '__main__':
     generate_clash('output/airport.yaml')
