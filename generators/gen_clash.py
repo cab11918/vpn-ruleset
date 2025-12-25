@@ -29,7 +29,8 @@ def generate_clash(airport_file):
                 indent = len(line) - len(stripped)
                 value = user_config[key]
                 if isinstance(value, str):
-                    result_lines.append(' ' * indent + f"{key}: {yaml.dump(value, default_style=\"'\").strip()}")
+                    dumped = yaml.dump(value, default_style="'").strip()
+                    result_lines.append(' ' * indent + f"{key}: {dumped}")
                 else:
                     result_lines.append(' ' * indent + f"{key}: {value}")
                 i += 1
