@@ -8,14 +8,24 @@ proxies:
 - name: 剩余 116 天 (2026-04-20 17:37)
   type: trojan
   server: tpahk.nwncd.com
-  port: 20848
+  port: 20849
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk48.nwncd.com
+  sni: azhk49.nwncd.com
   udp: true
   network: grpc
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 剩余 2.35TB 流量
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20847
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk47.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 07
   type: trojan
   server: tpahk.nwncd.com
   port: 20840
@@ -25,22 +35,12 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mygrpc
-- name: A Series - HK 07
-  type: trojan
-  server: tpahk.nwncd.com
-  port: 20849
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk49.nwncd.com
-  udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mygrpc
 - name: A Series - HK 07 (中转)
   type: trojan
   server: tpahk.nwncd.com
-  port: 20848
+  port: 20851
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk48.nwncd.com
+  sni: azhk51.nwncd.com
   udp: true
   network: grpc
   grpc-opts:
@@ -2077,7 +2077,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mygrpc
-proxy-groups:
+proxy-groups: [{'name': '💡 测试策略组', 'proxies': ['🔰 节点选择', '🎯 全球直连', '♻️ 自动选择'], 'type': 'select'}]
 - name: 🔰 节点选择
   type: select
   proxies:
@@ -4177,14 +4177,7 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08)
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
-- name: 💡 测试策略组
-  proxies:
-  - 🔰 节点选择
-  - 🎯 全球直连
-  - ♻️ 自动选择
-  type: select
-
-rules:
+rules: ['DOMAIN-SUFFIX,openai.com,Proxy', 'DOMAIN-SUFFIX,anthropic.com,Proxy', 'GEOIP,CN,DIRECT']
 - DOMAIN-SUFFIX,local,🎯 全球直连
 - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
 - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
@@ -14506,6 +14499,3 @@ rules:
 - DOMAIN-KEYWORD,XLLiveUD,🎯 全球直连
 - GEOIP,CN,🎯 全球直连
 - MATCH,🐟 漏网之鱼
-- DOMAIN-SUFFIX,openai.com,Proxy
-- DOMAIN-SUFFIX,anthropic.com,Proxy
-- GEOIP,CN,DIRECT
