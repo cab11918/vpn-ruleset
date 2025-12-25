@@ -10,20 +10,22 @@ def generate_clash(airport_file):
             f.write(airport_content)
         return
     
-    user_lines = {}
+    user_overrides = {}
     for line in user_content.split('\n'):
         stripped = line.lstrip()
         if ':' in stripped and not stripped.startswith('-') and not stripped.startswith('#'):
             key = stripped.split(':')[0].strip()
-            user_lines[key] = line
+            value = ':'.join(stripped.split(':')[1:])
+            user_overrides[key] = value
     
     result_lines = []
     for line in airport_content.split('\n'):
         stripped = line.lstrip()
         if ':' in stripped and not stripped.startswith('-') and not stripped.startswith('#'):
             key = stripped.split(':')[0].strip()
-            if key in user_lines:
-                result_lines.append(user_lines[key])
+            if key in user_overrides:
+                indent = len(line) - len(stripped)
+                result_lines.append(' ' * indent + key + ':' + user_overrides[key])
                 continue
         result_lines.append(line)
     
