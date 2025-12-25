@@ -5,12 +5,12 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-- name: 剩余 117 天 (2026-04-20 17:37)
+- name: 剩余 116 天 (2026-04-20 17:37)
   type: trojan
   server: tpahk.nwncd.com
-  port: 20841
+  port: 20847
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk41.nwncd.com
+  sni: azhk47.nwncd.com
   udp: true
   network: grpc
   grpc-opts:
@@ -18,9 +18,9 @@ proxies:
 - name: 剩余 2.35TB 流量
   type: trojan
   server: tpahk.nwncd.com
-  port: 20840
+  port: 20839
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk40.nwncd.com
+  sni: azhk39.nwncd.com
   udp: true
   network: grpc
   grpc-opts:
@@ -277,7 +277,7 @@ proxies:
 - name: A Series - HK 43
   type: trojan
   server: azhk43.nwncd.com
-  port: 1093
+  port: 1101
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   sni: azhk43.nwncd.com
   udp: true
@@ -674,7 +674,7 @@ proxies:
     grpc-service-name: mygrpc
 - name: California (美国) A01
   server: usa01.nwncd.com
-  port: 38841
+  port: 38871
   type: vmess
   uuid: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   alterId: '2'
@@ -1847,7 +1847,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mygrpc
-- name: Z 意大利A01
+- name: 将在 01-01 恢复 (Z 意大利A01)
   type: trojan
   server: ita01.nwncd.com
   port: 35322
@@ -1857,7 +1857,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mygrpc
-- name: Z 意大利A01 (香港中转)
+- name: 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50021
@@ -2083,7 +2083,7 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -2267,8 +2267,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -2295,7 +2295,7 @@ proxy-groups:
   url: http://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -2479,8 +2479,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -2508,7 +2508,7 @@ proxy-groups:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -2692,8 +2692,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -2733,7 +2733,7 @@ proxy-groups:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -2917,8 +2917,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -2950,7 +2950,7 @@ proxy-groups:
   proxies:
   - 🎯 全球直连
   - 🔰 节点选择
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -3134,8 +3134,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -3162,7 +3162,7 @@ proxy-groups:
   proxies:
   - 🔰 节点选择
   - 🎯 全球直连
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -3346,8 +3346,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -3375,7 +3375,7 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -3559,8 +3559,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -3597,7 +3597,7 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -3781,8 +3781,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -3810,7 +3810,7 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - 【B Series 最快 50Mbps】
   - California (美国) A01
@@ -3901,8 +3901,6 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
@@ -3961,7 +3959,8 @@ proxy-groups:
   - Japan A11 (中转)
   - Japan A12
   - Japan A12 (中转)
-  - Z 意大利A01
+  - Japan B01
+  - Z 新加坡A02
   - Z 阿根廷01
   - Z 韩国B05
   - Z 韩国B06
@@ -3971,7 +3970,7 @@ proxy-groups:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 剩余 117 天 (2026-04-20 17:37)
+  - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
   - A Series - HK 07 (中转)
@@ -4155,8 +4154,8 @@ proxy-groups:
   - Z 土耳其03 (香港中转)
   - Z 德国A01
   - Z 德国A01 (香港中转)
-  - Z 意大利A01
-  - Z 意大利A01 (香港中转)
+  - 将在 01-01 恢复 (Z 意大利A01)
+  - 将在 01-01 恢复 (Z 意大利A01 (香港中转))
   - Z 新加坡A01 (香港中转)
   - Z 新加坡A02
   - Z 新加坡A02 (香港中转)
