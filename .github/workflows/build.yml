@@ -22,7 +22,7 @@ jobs:
         with:
           python-version: '3.11'
       
-      - run: pip install pyyaml requests
+      - run: pip install ruamel.yaml requests
       
       - run: python scripts/fetch_airport.py ${{ secrets.AIRPORT_SUB }}
       
