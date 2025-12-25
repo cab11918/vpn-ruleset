@@ -9,9 +9,9 @@ proxies:
   name: '剩余 116 天 (2026-04-20 17:37)'
   type: trojan
   server: tpahk.nwncd.com
-  port: 20839
+  port: 20850
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk39.nwncd.com
+  sni: azhk50.nwncd.com
   udp: true
   network: grpc
   grpc-opts: { grpc-service-name: mygrpc }
@@ -19,9 +19,9 @@ proxies:
   name: '剩余 2.35TB 流量'
   type: trojan
   server: tpahk.nwncd.com
-  port: 20847
+  port: 20834
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk47.nwncd.com
+  sni: azhk34.nwncd.com
   udp: true
   network: grpc
   grpc-opts: { grpc-service-name: mygrpc }
@@ -29,9 +29,9 @@ proxies:
   name: 'A Series - HK 07'
   type: trojan
   server: tpahk.nwncd.com
-  port: 20848
+  port: 20841
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk48.nwncd.com
+  sni: azhk41.nwncd.com
   udp: true
   network: grpc
   grpc-opts: { grpc-service-name: mygrpc }
@@ -39,9 +39,9 @@ proxies:
   name: 'A Series - HK 07 (中转)'
   type: trojan
   server: tpahk.nwncd.com
-  port: 20834
+  port: 20850
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk34.nwncd.com
+  sni: azhk50.nwncd.com
   udp: true
   network: grpc
   grpc-opts: { grpc-service-name: mygrpc }
@@ -678,7 +678,7 @@ proxies:
  -
   name: 'California (美国) A01'
   server: usa01.nwncd.com
-  port: 38881
+  port: 38883
   type: vmess
   uuid: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   alterId: '2'

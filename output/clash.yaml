@@ -9,9 +9,9 @@ proxies:
   name: '剩余 116 天 (2026-04-20 17:37)'
   type: trojan
   server: tpahk.nwncd.com
-  port: 20839
+  port: 20850
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk39.nwncd.com
+  sni: azhk50.nwncd.com
   udp: true
   network: grpc
   grpc-opts: { grpc-service-name: mygrpc }
@@ -19,9 +19,9 @@ proxies:
   name: '剩余 2.35TB 流量'
   type: trojan
   server: tpahk.nwncd.com
-  port: 20847
+  port: 20834
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk47.nwncd.com
+  sni: azhk34.nwncd.com
   udp: true
   network: grpc
   grpc-opts: { grpc-service-name: mygrpc }
@@ -29,9 +29,9 @@ proxies:
   name: 'A Series - HK 07'
   type: trojan
   server: tpahk.nwncd.com
-  port: 20848
+  port: 20841
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk48.nwncd.com
+  sni: azhk41.nwncd.com
   udp: true
   network: grpc
   grpc-opts: { grpc-service-name: mygrpc }
@@ -39,9 +39,9 @@ proxies:
   name: 'A Series - HK 07 (中转)'
   type: trojan
   server: tpahk.nwncd.com
-  port: 20834
+  port: 20850
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk34.nwncd.com
+  sni: azhk50.nwncd.com
   udp: true
   network: grpc
   grpc-opts: { grpc-service-name: mygrpc }
@@ -678,7 +678,7 @@ proxies:
  -
   name: 'California (美国) A01'
   server: usa01.nwncd.com
-  port: 38881
+  port: 38883
   type: vmess
   uuid: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   alterId: '2'
@@ -2146,14 +2146,10 @@ proxy-groups:
   name: '🎮 Steam'
   type: select
   proxies: ['🔰 节点选择', '🎯 全球直连', '♻️ 自动选择', '剩余 116 天 (2026-04-20 17:37)', '剩余 2.35TB 流量', 'A Series - HK 07', 'A Series - HK 07 (中转)', 'A Series - HK 11', 'A Series - HK 11 (中转)', 'A Series - HK 17', 'A Series - HK 17 (中转)', 'A Series - HK 22', 'A Series - HK 22 (中转)', 'A Series - HK 25', 'A Series - HK 25 (中转)', 'A Series - HK 30', 'A Series - HK 30 (中转)', 'A Series - HK 31', 'A Series - HK 31 (中转)', 'A Series - HK 32', 'A Series - HK 32 (中转)', 'A Series - HK 34', 'A Series - HK 34 (中转)', 'A Series - HK 39', 'A Series - HK 39 (中转)', 'A Series - HK 40', 'A Series - HK 40 (中转)', 'A Series - HK 41', 'A Series - HK 41 (中转)', 'A Series - HK 41 (Hysteria2)', 'A Series - HK 43', 'A Series - HK 43 (中转)', 'A Series - HK 43 (Hysteria2)', 'A Series - HK 44', 'A Series - HK 44 (中转)', 'A Series - HK 44 (Hysteria2)', 'A Series - HK 45', 'A Series - HK 45 (中转)', 'A Series - HK 46', 'A Series - HK 46 (中转)', 'A Series - HK 47', 'A Series - HK 47 (中转)', 'A Series - HK 48', 'A Series - HK 48 (中转)', 'A Series - HK 49', 'A Series - HK 49 (中转)', 'A Series - HK 50', 'A Series - HK 50 (中转)', 'A Series - HK 51', 'A Series - HK 51 (中转)', 'AC Series - HK 01', 'AC Series - HK 02', '【B Series 最快 50Mbps】', 'B Series - HK 02 (中转)', 'B Series - HK 03 (中转)', 'B Series - HK 04 (中转)', 'B Series - HK 05 (中转)', 'B Series - HK 13 (中转)', 'B Series - HK 14 (中转)', 'B Series - HK 15 (中转)', 'B Series - HK 16 (中转)', 'B Series - HK 18 (中转)', 'B Series - HK 19 (中转)', 'B Series - HK 21 (中转)', 'B Series - HK 33 (中转)', 'B Series - HK 35 (中转)', 'B Series - HK 37 (中转)', 'B Series - HK 38 (中转)', 'C Series - HK 29', 'C Series - HK 29 (中转)', 'California (美国) A01', '将在 12-28 恢复 (California (美国) A02)', '将在 12-28 恢复 (California (美国) A03)', '将在 12-28 恢复 (California (美国) A04)', '将在 01-15 恢复 (California (美国) A05)', '将在 01-16 恢复 (California (美国) A06)', '将在 01-16 恢复 (California (美国) A07)', '将在 01-16 恢复 (California (美国) A08)', '将在 01-16 恢复 (California (美国) A09)', '将在 01-04 恢复 (California (美国) A10)', '将在 01-01 恢复 (California (美国) A11)', '将在 01-01 恢复 (California (美国) A12)', '将在 01-01 恢复 (California (美国) A13)', '将在 01-01 恢复 (California (美国) A14)', '将在 01-01 恢复 (California (美国) A15)', 'California (美国) A16', 'California (美国) A17', '将在 01-12 恢复 (California (美国) A18)', 'California (美国) A19', '将在 01-12 恢复 (California (美国) A20)', '将在 01-14 恢复 (California (美国) B01)', '将在 01-14 恢复 (California (美国) B02)', '将在 01-14 恢复 (California (美国) B03)', '将在 01-14 恢复 (California (美国) B04)', '将在 01-14 恢复 (California (美国) B05)', 'California (美国) B06', 'California (美国) B07', 'California (美国) B08', 'California (美国) B09', 'California (美国) B10', 'California (美国) B11', 'California (美国) B12', 'California (美国) B13', 'California (美国) B14', 'California (美国) B15', 'California (美国) B16', 'California (美国) B17', 'California (美国) B18', 'California (美国) B19', 'California (美国) B20', 'California (美国) B21', 'California (美国) B22', 'California (美国) B23', 'California (美国) B24', 'California (美国) B25', 'California (美国) B26', 'California (美国) B27', '将在 01-02 恢复 (California (美国) E01)', '将在 01-02 恢复 (California (美国) E01 (中转))', '将在 12-26 恢复 (California (美国) E02)', '将在 12-26 恢复 (California (美国) E02 (中转))', 'California (美国) F01', 'California (美国) G01', 'California (美国) G02', 'California (美国) G03', 'California (美国) G04', 'California (美国) G05', 'California (美国) G06', 'California (美国) G07', '将在 12-28 恢复 (California (美国) G08)', '将在 12-28 恢复 (California (美国) G09)', 'California (美国) G10', 'California (美国) G11', 'California (美国) G12', 'California (美国) G13', 'California (美国) G14', 'China Taiwan A01 (中转)', 'China Taiwan B01', 'China Taiwan B02', 'China Taiwan B02 (中转)', 'China Taiwan C01', 'China Taiwan C01 (中转)', 'China Taiwan C02', 'China Taiwan C02 (中转)', 'Hong Kong C01', 'Hong Kong C01 (中转)', 'Japan A01', 'Japan A01 (中转)', 'Japan A02', 'Japan A02 (中转)', 'Japan A03', 'Japan A03 (中转)', 'Japan A04', 'Japan A04 (中转)', 'Japan A05', 'Japan A05 (中转)', 'Japan A06', 'Japan A06 (中转)', 'Japan A07', 'Japan A07 (中转)', 'Japan A08', 'Japan A08 (中转)', 'Japan A09', 'Japan A09 (中转)', 'Japan A10', 'Japan A10 (中转)', 'Japan A11', 'Japan A11 (中转)', 'Japan A12', 'Japan A12 (中转)', 'Japan A13', 'Japan A13 (中转)', 'Japan A14', 'Japan A14 (中转)', 'Japan A15', 'Japan A15 (中转)', 'Japan B01', 'Japan B01 (香港中转)', 'Japan C01 (直连)', 'Russia B01', 'Z 土耳其01 (国内中转)', 'Z 土耳其01 (香港中转)', 'Z 土耳其02 (国内中转)', 'Z 土耳其02 (香港中转)', 'Z 土耳其03 (香港中转)', 'Z 德国A01', 'Z 德国A01 (香港中转)', '将在 01-01 恢复 (Z 意大利A01)', '将在 01-01 恢复 (Z 意大利A01 (香港中转))', 'Z 新加坡A01 (香港中转)', 'Z 新加坡A02', 'Z 新加坡A02 (香港中转)', 'Z 澳大利亚A01 (香港中转)', 'Z 澳大利亚B01 (香港中转)', 'Z 英国01 (国内中转)', 'Z 英国01 (香港中转)', 'Z 英国02', 'Z 英国02 (香港中转)', 'Z 阿根廷01', 'Z 阿根廷01 (香港中转)', '将在 01-08 恢复 (Z 韩国B02)', '将在 01-04 恢复 (Z 韩国B03)', '将在 01-04 恢复 (Z 韩国B04)', 'Z 韩国B05', 'Z 韩国B06', '将在 12-27 恢复 (Z 韩国B07)', '将在 12-27 恢复 (Z 韩国B07 (香港中转))', '将在 12-27 恢复 (Z 韩国B08)', '将在 12-27 恢复 (Z 韩国B08 (香港中转))', 'Z 马来西亚A01 (香港中转)']
- -
-  name: 💡 测试策略组
-   proxies:
-     - 🔰 节点选择
-     - 🎯 全球直连
-     - ♻️ 自动选择
-   type: select
-
+- 
+ name: 💡 测试策略组
+ proxies: ['🎯 全球直连', '🔰 节点选择']
+ type: select
 rules:
  - 'DOMAIN-SUFFIX,local,🎯 全球直连'
  - 'IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve'
@@ -12477,6 +12473,5 @@ rules:
  - 'GEOIP,CN,🎯 全球直连'
  - 'MATCH,🐟 漏网之鱼'
 
- - DOMAIN-SUFFIX,openai.com,Proxy
- - DOMAIN-SUFFIX,anthropic.com,Proxy
- - GEOIP,CN,DIRECT
+- 'DOMAIN-SUFFIX,testmicro.com,Ⓜ️ testmicro'
+- 'DOMAIN-SUFFIX,assets-testmicro1.com,Ⓜ️ testmicro1'
