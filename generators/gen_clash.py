@@ -6,38 +6,31 @@ def generate_clash(airport_file):
     
     try:
         with open('ruleset/clash.yaml') as f:
-            user_config = yaml.safe_load(f) or {}
+            user_content = f.read()
     except FileNotFoundError:
-        user_config = {}
+        with open('output/clash.yaml', 'w') as f:
+            f.write(airport_content)
+        return
     
+    user_config = yaml.safe_load(user_content) or {}
     if not user_config:
         with open('output/clash.yaml', 'w') as f:
             f.write(airport_content)
         return
     
+    user_lines = {line.split(':')[0].strip(): line for line in user_content.split('\n') if ':' in line and not line.strip().startswith('-')}
+    
     lines = airport_content.split('\n')
     result_lines = []
-    i = 0
     
-    while i < len(lines):
-        line = lines[i]
+    for line in lines:
         stripped = line.lstrip()
-        
         if ':' in stripped and not stripped.startswith('-'):
             key = stripped.split(':')[0].strip()
-            if key in user_config:
-                indent = len(line) - len(stripped)
-                value = user_config[key]
-                if isinstance(value, str):
-                    dumped = yaml.dump(value, default_style="'").strip()
-                    result_lines.append(' ' * indent + f"{key}: {dumped}")
-                else:
-                    result_lines.append(' ' * indent + f"{key}: {value}")
-                i += 1
+            if key in user_lines:
+                result_lines.append(user_lines[key])
                 continue
-        
         result_lines.append(line)
-        i += 1
     
     with open('output/clash.yaml', 'w') as f:
         f.write('\n'.join(result_lines))
