@@ -4,19 +4,39 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: :9090
-    proxies:
+proxies:
 - name: 剩余 116 天 (2026-04-20 17:37)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
-  port: 20839
+  port: 20850
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk39.nwncd.com
+  sni: azhk50.nwncd.com
   udp: true
   network: grpc
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 剩余 2.35TB 流量
-    type: select
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20850
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk50.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 07
+  type: trojan
+  server: tpahk.nwncd.com
+  port: 20834
+  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
+  sni: azhk34.nwncd.com
+  udp: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mygrpc
+- name: A Series - HK 07 (中转)
+  type: trojan
   server: tpahk.nwncd.com
   port: 20839
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -25,28 +45,8 @@ external-controller: :9090
   network: grpc
   grpc-opts:
     grpc-service-name: mygrpc
-- name: A Series - HK 07
-    type: select
-  server: tpahk.nwncd.com
-  port: 20840
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk40.nwncd.com
-  udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mygrpc
-- name: A Series - HK 07 (中转)
-    type: select
-  server: tpahk.nwncd.com
-  port: 20848
-  password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
-  sni: azhk48.nwncd.com
-  udp: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mygrpc
 - name: A Series - HK 11
-    type: select
+  type: trojan
   server: azhk11.nwncd.com
   port: 467
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -56,7 +56,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 11 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20811
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -66,7 +66,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 17
-    type: select
+  type: trojan
   server: azhk17.nwncd.com
   port: 507
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -76,7 +76,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 17 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20817
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -86,7 +86,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 22
-    type: select
+  type: trojan
   server: azhk22.nwncd.com
   port: 467
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -96,7 +96,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 22 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20822
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -106,7 +106,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 25
-    type: select
+  type: trojan
   server: azhk25.nwncd.com
   port: 471
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -116,7 +116,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 25 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20825
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -126,7 +126,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 30
-    type: select
+  type: trojan
   server: azhk30.nwncd.com
   port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -136,7 +136,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 30 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20830
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -146,7 +146,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 31
-    type: select
+  type: trojan
   server: azhk31.nwncd.com
   port: 501
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -156,7 +156,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 31 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20831
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -166,7 +166,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 32
-    type: select
+  type: trojan
   server: azhk32.nwncd.com
   port: 467
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -176,7 +176,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 32 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20832
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -186,7 +186,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 34
-    type: select
+  type: trojan
   server: azhk34.nwncd.com
   port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -196,7 +196,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 34 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20834
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -206,7 +206,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 39
-    type: select
+  type: trojan
   server: azhk39.nwncd.com
   port: 469
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -216,7 +216,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 39 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20839
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -226,7 +226,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 40
-    type: select
+  type: trojan
   server: azhk40.nwncd.com
   port: 467
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -236,7 +236,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 40 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20840
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -246,7 +246,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 41
-    type: select
+  type: trojan
   server: azhk41.nwncd.com
   port: 665
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -256,7 +256,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 41 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20841
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -266,7 +266,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 41 (Hysteria2)
-    type: select
+  type: hysteria2
   server: azhk41.nwncd.com
   port: 48659
   password: laVwQaS5xkjDc3u4
@@ -275,7 +275,7 @@ external-controller: :9090
   up: 1000
   down: 1000
 - name: A Series - HK 43
-    type: select
+  type: trojan
   server: azhk43.nwncd.com
   port: 1101
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -285,7 +285,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 43 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20843
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -295,7 +295,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 43 (Hysteria2)
-    type: select
+  type: hysteria2
   server: azhk43.nwncd.com
   port: 56325
   password: laVwQaS5xkjDc3u4
@@ -304,7 +304,7 @@ external-controller: :9090
   up: 1000
   down: 1000
 - name: A Series - HK 44
-    type: select
+  type: trojan
   server: azhk44.nwncd.com
   port: 799
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -314,7 +314,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 44 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20844
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -324,7 +324,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 44 (Hysteria2)
-    type: select
+  type: hysteria2
   server: azhk44.nwncd.com
   port: 53245
   password: laVwQaS5xkjDc3u4
@@ -333,7 +333,7 @@ external-controller: :9090
   up: 1000
   down: 1000
 - name: A Series - HK 45
-    type: select
+  type: trojan
   server: azhk45.nwncd.com
   port: 471
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -343,7 +343,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 45 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20845
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -353,7 +353,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 46
-    type: select
+  type: trojan
   server: azhk46.nwncd.com
   port: 51725
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -363,7 +363,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 46 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20846
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -373,7 +373,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 47
-    type: select
+  type: trojan
   server: azhk47.nwncd.com
   port: 35226
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -383,7 +383,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 47 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20847
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -393,7 +393,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 48
-    type: select
+  type: trojan
   server: azhk48.nwncd.com
   port: 35224
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -403,7 +403,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 48 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20848
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -413,7 +413,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 49
-    type: select
+  type: trojan
   server: azhk49.nwncd.com
   port: 35224
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -423,7 +423,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 49 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20849
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -433,7 +433,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 50
-    type: select
+  type: trojan
   server: azhk50.nwncd.com
   port: 35226
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -443,7 +443,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 50 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20850
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -453,7 +453,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 51
-    type: select
+  type: trojan
   server: azhk51.nwncd.com
   port: 35226
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -463,7 +463,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: A Series - HK 51 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20851
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -473,7 +473,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: AC Series - HK 01
-    type: select
+  type: trojan
   server: hkd01.nwncd.com
   port: 467
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -483,7 +483,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: AC Series - HK 02
-    type: select
+  type: trojan
   server: hkac02.nwncd.com
   port: 517
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -493,7 +493,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 【B Series 最快 50Mbps】
-    type: select
+  type: trojan
   server: azhk02.nwncd.com
   port: 453
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -503,7 +503,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 02 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20802
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -513,7 +513,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 03 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20803
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -523,7 +523,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 04 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20804
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -533,7 +533,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 05 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20805
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -543,7 +543,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 13 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20813
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -553,7 +553,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 14 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20814
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -563,7 +563,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 15 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20815
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -573,7 +573,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 16 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20816
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -583,7 +583,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 18 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20818
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -593,7 +593,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 19 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20819
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -603,7 +603,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 21 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20821
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -613,7 +613,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 33 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20833
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -623,7 +623,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 35 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20835
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -633,7 +633,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 37 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20837
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -643,7 +643,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: B Series - HK 38 (中转)
-    type: select
+  type: trojan
   server: rehkb.nwncd.com
   port: 20838
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -653,7 +653,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: C Series - HK 29
-    type: select
+  type: trojan
   server: azhk29.nwncd.com
   port: 711
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -663,7 +663,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: C Series - HK 29 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 20829
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -675,7 +675,7 @@ external-controller: :9090
 - name: California (美国) A01
   server: usa01.nwncd.com
   port: 38873
-    type: select
+  type: vmess
   uuid: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   alterId: '2'
   cipher: auto
@@ -689,7 +689,7 @@ external-controller: :9090
       Host: portal.azure.com
   udp: true
 - name: 将在 12-28 恢复 (California (美国) A02)
-    type: select
+  type: trojan
   server: usa02.nwncd.com
   port: 65294
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -699,7 +699,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: 将在 12-28 恢复 (California (美国) A03)
-    type: select
+  type: trojan
   server: usa03.nwncd.com
   port: 46925
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -709,7 +709,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: 将在 12-28 恢复 (California (美国) A04)
-    type: select
+  type: trojan
   server: usa04.nwncd.com
   port: 32759
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -719,7 +719,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: 将在 01-15 恢复 (California (美国) A05)
-    type: select
+  type: trojan
   server: usa05.nwncd.com
   port: 461
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -729,7 +729,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-16 恢复 (California (美国) A06)
-    type: select
+  type: trojan
   server: usa06.nwncd.com
   port: 461
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -739,7 +739,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-16 恢复 (California (美国) A07)
-    type: select
+  type: trojan
   server: usa07.nwncd.com
   port: 461
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -749,7 +749,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-16 恢复 (California (美国) A08)
-    type: select
+  type: trojan
   server: usa08.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -759,7 +759,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-16 恢复 (California (美国) A09)
-    type: select
+  type: trojan
   server: usa09.nwncd.com
   port: 461
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -769,7 +769,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-04 恢复 (California (美国) A10)
-    type: select
+  type: trojan
   server: usa10.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -779,7 +779,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-01 恢复 (California (美国) A11)
-    type: select
+  type: trojan
   server: usa11.nwncd.com
   port: 443
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -789,7 +789,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-01 恢复 (California (美国) A12)
-    type: select
+  type: trojan
   server: usa12.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -799,7 +799,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-01 恢复 (California (美国) A13)
-    type: select
+  type: trojan
   server: usa13.nwncd.com
   port: 461
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -809,7 +809,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-01 恢复 (California (美国) A14)
-    type: select
+  type: trojan
   server: usa14.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -819,7 +819,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-01 恢复 (California (美国) A15)
-    type: select
+  type: trojan
   server: usa15.nwncd.com
   port: 461
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -829,7 +829,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) A16
-    type: select
+  type: trojan
   server: usa16.nwncd.com
   port: 465
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -839,7 +839,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) A17
-    type: select
+  type: trojan
   server: usa17.nwncd.com
   port: 465
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -849,7 +849,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-12 恢复 (California (美国) A18)
-    type: select
+  type: trojan
   server: usa18.nwncd.com
   port: 461
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -859,7 +859,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) A19
-    type: select
+  type: trojan
   server: usa19.nwncd.com
   port: 465
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -869,7 +869,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-12 恢复 (California (美国) A20)
-    type: select
+  type: trojan
   server: usa20.nwncd.com
   port: 467
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -879,7 +879,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-14 恢复 (California (美国) B01)
-    type: select
+  type: trojan
   server: usb01.nwncd.com
   port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -889,7 +889,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-14 恢复 (California (美国) B02)
-    type: select
+  type: trojan
   server: usb02.nwncd.com
   port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -899,7 +899,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-14 恢复 (California (美国) B03)
-    type: select
+  type: trojan
   server: usb03.nwncd.com
   port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -909,7 +909,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-14 恢复 (California (美国) B04)
-    type: select
+  type: trojan
   server: usb04.nwncd.com
   port: 461
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -919,7 +919,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-14 恢复 (California (美国) B05)
-    type: select
+  type: trojan
   server: usb05.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -929,7 +929,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B06
-    type: select
+  type: trojan
   server: usb06.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -939,7 +939,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B07
-    type: select
+  type: trojan
   server: usb07.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -949,7 +949,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B08
-    type: select
+  type: trojan
   server: usb08.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -959,7 +959,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B09
-    type: select
+  type: trojan
   server: usb09.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -969,7 +969,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B10
-    type: select
+  type: trojan
   server: usb10.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -979,7 +979,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B11
-    type: select
+  type: trojan
   server: usb11.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -989,7 +989,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B12
-    type: select
+  type: trojan
   server: usb12.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -999,7 +999,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B13
-    type: select
+  type: trojan
   server: usb13.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1009,7 +1009,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B14
-    type: select
+  type: trojan
   server: usb14.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1019,7 +1019,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B15
-    type: select
+  type: trojan
   server: usb15.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1029,7 +1029,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B16
-    type: select
+  type: trojan
   server: usb16.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1039,7 +1039,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B17
-    type: select
+  type: trojan
   server: usb17.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1049,7 +1049,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B18
-    type: select
+  type: trojan
   server: usb18.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1059,7 +1059,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B19
-    type: select
+  type: trojan
   server: usb19.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1069,7 +1069,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B20
-    type: select
+  type: trojan
   server: usb20.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1079,7 +1079,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B21
-    type: select
+  type: trojan
   server: usb21.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1089,7 +1089,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B22
-    type: select
+  type: trojan
   server: usb22.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1099,7 +1099,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B23
-    type: select
+  type: trojan
   server: usb23.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1109,7 +1109,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B24
-    type: select
+  type: trojan
   server: usb24.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1119,7 +1119,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B25
-    type: select
+  type: trojan
   server: usb25.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1129,7 +1129,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B26
-    type: select
+  type: trojan
   server: usb26.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1139,7 +1139,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) B27
-    type: select
+  type: trojan
   server: usb27.nwncd.com
   port: 457
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1149,7 +1149,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-02 恢复 (California (美国) E01)
-    type: select
+  type: trojan
   server: use01.nwncd.com
   port: 1269
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1159,7 +1159,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-02 恢复 (California (美国) E01 (中转))
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 22001
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1169,7 +1169,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 12-26 恢复 (California (美国) E02)
-    type: select
+  type: trojan
   server: use02.nwncd.com
   port: 1787
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1179,7 +1179,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 12-26 恢复 (California (美国) E02 (中转))
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 22002
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1189,7 +1189,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: California (美国) F01
-    type: select
+  type: trojan
   server: usf01.nwncd.com
   port: 50697
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1199,7 +1199,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: community
 - name: California (美国) G01
-    type: select
+  type: trojan
   server: usg01.nwncd.com
   port: 50679
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1209,7 +1209,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G02
-    type: select
+  type: trojan
   server: usg02.nwncd.com
   port: 39472
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1219,7 +1219,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G03
-    type: select
+  type: trojan
   server: usg03.nwncd.com
   port: 49372
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1229,7 +1229,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G04
-    type: select
+  type: trojan
   server: usg04.nwncd.com
   port: 38274
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1239,7 +1239,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G05
-    type: select
+  type: trojan
   server: usg05.nwncd.com
   port: 39206
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1249,7 +1249,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G06
-    type: select
+  type: trojan
   server: usg06.nwncd.com
   port: 28472
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1259,7 +1259,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G07
-    type: select
+  type: trojan
   server: usg07.nwncd.com
   port: 53942
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1269,7 +1269,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: 将在 12-28 恢复 (California (美国) G08)
-    type: select
+  type: trojan
   server: usg08.nwncd.com
   port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1279,7 +1279,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: 将在 12-28 恢复 (California (美国) G09)
-    type: select
+  type: trojan
   server: usg09.nwncd.com
   port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1289,7 +1289,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G10
-    type: select
+  type: trojan
   server: usg10.nwncd.com
   port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1299,7 +1299,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G11
-    type: select
+  type: trojan
   server: usg11.nwncd.com
   port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1309,7 +1309,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G12
-    type: select
+  type: trojan
   server: usg12.nwncd.com
   port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1319,7 +1319,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G13
-    type: select
+  type: trojan
   server: usg13.nwncd.com
   port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1329,7 +1329,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: California (美国) G14
-    type: select
+  type: trojan
   server: usg14.nwncd.com
   port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1339,7 +1339,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: China Taiwan A01 (中转)
-    type: select
+  type: trojan
   server: tptw.nwncd.com
   port: 511
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1349,7 +1349,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: China Taiwan B01
-    type: select
+  type: trojan
   server: twb01.nwncd.com
   port: 53940
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1359,7 +1359,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: communitarian
 - name: China Taiwan B02
-    type: select
+  type: trojan
   server: twb02.nwncd.com
   port: 663
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1369,7 +1369,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: China Taiwan B02 (中转)
-    type: select
+  type: trojan
   server: tptw.nwncd.com
   port: 522
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1379,7 +1379,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: China Taiwan C01
-    type: select
+  type: trojan
   server: twc01.nwncd.com
   port: 789
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1389,7 +1389,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: China Taiwan C01 (中转)
-    type: select
+  type: trojan
   server: tptw.nwncd.com
   port: 711
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1399,7 +1399,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: China Taiwan C02
-    type: select
+  type: trojan
   server: twc02.nwncd.com
   port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1409,7 +1409,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: China Taiwan C02 (中转)
-    type: select
+  type: trojan
   server: tptw.nwncd.com
   port: 712
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1419,7 +1419,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Hong Kong C01
-    type: select
+  type: trojan
   server: hkc01.nwncd.com
   port: 459
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1429,7 +1429,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Hong Kong C01 (中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 58201
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1439,7 +1439,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A01
-    type: select
+  type: trojan
   server: jpa01.nwncd.com
   port: 35700
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1449,7 +1449,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A01 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 601
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1459,7 +1459,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A02
-    type: select
+  type: trojan
   server: jpa02.nwncd.com
   port: 35566
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1469,7 +1469,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A02 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 602
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1479,7 +1479,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A03
-    type: select
+  type: trojan
   server: jpa03.nwncd.com
   port: 35493
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1489,7 +1489,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A03 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 603
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1499,7 +1499,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A04
-    type: select
+  type: trojan
   server: jpa04.nwncd.com
   port: 35706
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1509,7 +1509,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A04 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 604
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1519,7 +1519,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A05
-    type: select
+  type: trojan
   server: jpa05.nwncd.com
   port: 34793
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1529,7 +1529,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A05 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 605
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1539,7 +1539,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A06
-    type: select
+  type: trojan
   server: jpa06.nwncd.com
   port: 35494
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1549,7 +1549,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A06 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 606
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1559,7 +1559,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A07
-    type: select
+  type: trojan
   server: jpa07.nwncd.com
   port: 35230
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1569,7 +1569,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A07 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 607
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1579,7 +1579,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A08
-    type: select
+  type: trojan
   server: jpa08.nwncd.com
   port: 35230
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1589,7 +1589,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A08 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 608
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1599,7 +1599,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A09
-    type: select
+  type: trojan
   server: jpa09.nwncd.com
   port: 35844
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1609,7 +1609,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A09 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 609
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1619,7 +1619,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A10
-    type: select
+  type: trojan
   server: jpa10.nwncd.com
   port: 36740
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1629,7 +1629,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A10 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 610
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1639,7 +1639,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A11
-    type: select
+  type: trojan
   server: jpa11.nwncd.com
   port: 35692
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1649,7 +1649,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A11 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 611
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1659,7 +1659,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A12
-    type: select
+  type: trojan
   server: jpa12.nwncd.com
   port: 35887
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1669,7 +1669,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A12 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 612
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1679,7 +1679,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A13
-    type: select
+  type: trojan
   server: jpa13.nwncd.com
   port: 35232
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1689,7 +1689,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A13 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 613
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1699,7 +1699,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A14
-    type: select
+  type: trojan
   server: jpa14.nwncd.com
   port: 35452
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1709,7 +1709,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A14 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 614
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1719,7 +1719,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A15
-    type: select
+  type: trojan
   server: jpa15.nwncd.com
   port: 35498
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1729,7 +1729,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan A15 (中转)
-    type: select
+  type: trojan
   server: rejpa.nwncd.com
   port: 615
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1739,7 +1739,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan B01
-    type: select
+  type: trojan
   server: jpb01.nwncd.com
   port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1749,7 +1749,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan B01 (香港中转)
-    type: select
+  type: trojan
   server: azhk22.nwncd.com
   port: 50101
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1759,7 +1759,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Japan C01 (直连)
-    type: select
+  type: hysteria2
   server: jpc01.nwncd.com
   port: 38710
   password: laVwQaS5xkjDc3u4
@@ -1768,7 +1768,7 @@ external-controller: :9090
   up: 1000
   down: 1000
 - name: Russia B01
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 25612
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1778,7 +1778,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 土耳其01 (国内中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 59101
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1788,7 +1788,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 土耳其01 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50091
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1798,7 +1798,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 土耳其02 (国内中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 59102
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1808,7 +1808,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 土耳其02 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50092
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1818,7 +1818,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 土耳其03 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50061
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1828,7 +1828,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 德国A01
-    type: select
+  type: trojan
   server: dea01.nwncd.com
   port: 35324
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1838,7 +1838,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 德国A01 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50031
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1848,7 +1848,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-01 恢复 (Z 意大利A01)
-    type: select
+  type: trojan
   server: ita01.nwncd.com
   port: 35322
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1858,7 +1858,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-01 恢复 (Z 意大利A01 (香港中转))
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50021
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1868,7 +1868,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 新加坡A01 (香港中转)
-    type: select
+  type: trojan
   server: azhk22.nwncd.com
   port: 50041
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1878,7 +1878,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 新加坡A02
-    type: select
+  type: trojan
   server: sga02.nwncd.com
   port: 35332
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1888,7 +1888,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 新加坡A02 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50042
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1898,7 +1898,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 澳大利亚A01 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50001
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1908,7 +1908,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 澳大利亚B01 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50011
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1918,7 +1918,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 英国01 (国内中转)
-    type: select
+  type: trojan
   server: tpahk.nwncd.com
   port: 51101
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1928,7 +1928,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 英国01 (香港中转)
-    type: select
+  type: trojan
   server: azhk22.nwncd.com
   port: 50081
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1938,7 +1938,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 英国02
-    type: select
+  type: trojan
   server: uka02.nwncd.com
   port: 23357
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1948,7 +1948,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 英国02 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 35101
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1958,7 +1958,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 阿根廷01
-    type: select
+  type: trojan
   server: newagt.nwncd.com
   port: 463
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1968,7 +1968,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 阿根廷01 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 30401
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1978,7 +1978,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-08 恢复 (Z 韩国B02)
-    type: select
+  type: trojan
   server: kra04.nwncd.com
   port: 35420
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1988,7 +1988,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-04 恢复 (Z 韩国B03)
-    type: select
+  type: trojan
   server: krb03.nwncd.com
   port: 35416
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -1998,7 +1998,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 01-04 恢复 (Z 韩国B04)
-    type: select
+  type: trojan
   server: krb04.nwncd.com
   port: 35418
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -2008,7 +2008,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 韩国B05
-    type: select
+  type: trojan
   server: krb05.nwncd.com
   port: 35328
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -2018,7 +2018,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 韩国B06
-    type: select
+  type: trojan
   server: krb06.nwncd.com
   port: 35322
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -2028,7 +2028,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 12-27 恢复 (Z 韩国B07)
-    type: select
+  type: trojan
   server: krb07.nwncd.com
   port: 35322
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -2038,7 +2038,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 12-27 恢复 (Z 韩国B07 (香港中转))
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50117
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -2048,7 +2048,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 12-27 恢复 (Z 韩国B08)
-    type: select
+  type: trojan
   server: krb08.nwncd.com
   port: 35322
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -2058,7 +2058,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: 将在 12-27 恢复 (Z 韩国B08 (香港中转))
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50118
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -2068,7 +2068,7 @@ external-controller: :9090
   grpc-opts:
     grpc-service-name: mygrpc
 - name: Z 马来西亚A01 (香港中转)
-    type: select
+  type: trojan
   server: optimize-hk-relay.nwncd.com
   port: 50051
   password: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
@@ -2079,8 +2079,8 @@ external-controller: :9090
     grpc-service-name: mygrpc
 proxy-groups:
 - name: 🔰 节点选择
-    type: select
-    proxies:
+  type: select
+  proxies:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 剩余 116 天 (2026-04-20 17:37)
@@ -2291,10 +2291,10 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
 - name: ♻️ 自动选择
-    type: select
+  type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
-    proxies:
+  proxies:
   - 剩余 116 天 (2026-04-20 17:37)
   - 剩余 2.35TB 流量
   - A Series - HK 07
@@ -2503,8 +2503,8 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
 - name: 🎥 NETFLIX
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
@@ -2716,20 +2716,20 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
 - name: ⛔️ 广告拦截
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
 - name: 🚫 运营劫持
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🛑 全球拦截
   - 🎯 全球直连
   - 🔰 节点选择
 - name: 🌍 国外媒体
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🔰 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
@@ -2941,13 +2941,13 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
 - name: 🌏 国内媒体
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🎯 全球直连
   - 🔰 节点选择
 - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🎯 全球直连
   - 🔰 节点选择
   - 剩余 116 天 (2026-04-20 17:37)
@@ -3158,8 +3158,8 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
 - name: 📲 电报信息
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - 剩余 116 天 (2026-04-20 17:37)
@@ -3370,8 +3370,8 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
 - name: 🍎 苹果服务
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
@@ -3583,17 +3583,17 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
 - name: 🎯 全球直连
-    type: select
-    proxies:
+  type: select
+  proxies:
   - DIRECT
 - name: 🛑 全球拦截
-    type: select
-    proxies:
+  type: select
+  proxies:
   - REJECT
   - DIRECT
 - name: 🐟 漏网之鱼
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
@@ -3805,8 +3805,8 @@ proxy-groups:
   - 将在 12-27 恢复 (Z 韩国B08 (香港中转))
   - Z 马来西亚A01 (香港中转)
 - name: 🤖 OpenAI
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
@@ -3916,8 +3916,8 @@ proxy-groups:
   - Z 韩国B06
   - Z 马来西亚A01 (香港中转)
 - name: 💡 Gemini
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
@@ -3965,8 +3965,8 @@ proxy-groups:
   - Z 韩国B05
   - Z 韩国B06
 - name: 🎮 Steam
-    type: select
-    proxies:
+  type: select
+  proxies:
   - 🔰 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
