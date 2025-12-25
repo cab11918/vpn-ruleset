@@ -1,12 +1,8 @@
 proxy-groups:
-  - name: 💡 测试策略组
-    proxies:
-      - 🔰 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-    type: select
-
+ - 
+  name: 💡 测试策略组
+  proxies: ['🎯 全球直连', '🔰 节点选择']
+  type: select
 rules:
-  - DOMAIN-SUFFIX,openai.com,Proxy
-  - DOMAIN-SUFFIX,anthropic.com,Proxy
-  - GEOIP,CN,DIRECT
+ - 'DOMAIN-SUFFIX,testmicro.com,Ⓜ️ testmicro'
+ - 'DOMAIN-SUFFIX,assets-testmicro1.com,Ⓜ️ testmicro1'
