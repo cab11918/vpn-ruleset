@@ -4,5 +4,5 @@ proxy-groups:
   proxies: ['🎯 全球直连', '🔰 节点选择']
   type: select
 rules:
- - 'DOMAIN-SUFFIX,testmicro.com,Ⓜ️ testmicro'
- - 'DOMAIN-SUFFIX,assets-testmicro1.com,Ⓜ️ testmicro1'
+ - 'DOMAIN-SUFFIX,testmicro.com,💡 测试策略组'
+ - 'DOMAIN-SUFFIX,assets-testmicro1.com,💡 测试策略组'
