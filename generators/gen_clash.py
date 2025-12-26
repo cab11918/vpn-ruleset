@@ -37,6 +37,17 @@ def generate_clash(clash_file):
         else:
             i += 1
     
+    user_rules = {}
+    if 'rules' in user_sections:
+        for line in user_sections['rules']:
+            stripped = line.strip()
+            if stripped.startswith('- '):
+                rule = stripped[2:]
+                parts = rule.split(',')
+                if len(parts) >= 2:
+                    rule_key = f"{parts[0]},{parts[1]}"
+                    user_rules[rule_key] = stripped
+    
     # 处理机场文件
     result_lines = []
     i = 0
@@ -58,6 +69,14 @@ def generate_clash(clash_file):
                         next_indent = len(next_line) - len(next_stripped)
                         if next_indent <= base_indent and ':' in next_stripped and not next_stripped.startswith('-'):
                             break
+                    if key == 'rules' and next_stripped.startswith('- '):
+                        rule = next_stripped[2:]
+                        parts = rule.split(',')
+                        if len(parts) >= 2:
+                            rule_key = f"{parts[0]},{parts[1]}"
+                            if rule_key in user_rules:
+                                i += 1
+                                continue
                     result_lines.append(next_line)
                     i += 1
                 # 追加用户内容
