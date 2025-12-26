@@ -688,7 +688,7 @@ proxies:
  -
   name: 'California (美国) A01'
   server: usa01.nwncd.com
-  port: 38935
+  port: 38937
   type: vmess
   uuid: c3bcf03d-6ef0-32cc-aa58-908cb5ab53e0
   alterId: '2'
@@ -2161,7 +2161,7 @@ proxy-groups:
  -
   name: '💡 Gemini'
   type: select
-  proxies: ['🔰 节点选择', '🎯 全球直连', '♻️ 自动选择', 'California (美国) A17', 'California (美国) A19', 'California (美国) B07', 'California (美国) B08', 'California (美国) B09', 'California (美国) B10', 'California (美国) B11', 'California (美国) B12', 'California (美国) B13', 'California (美国) B14', 'California (美国) B15', 'California (美国) B16', 'California (美国) B17', 'California (美国) B18', 'California (美国) B19', 'California (美国) B20', 'California (美国) B21', 'California (美国) B22', 'California (美国) B23', 'California (美国) B24', 'California (美国) B25', 'California (美国) B26', 'California (美国) B27', 'California (美国) E02', 'California (美国) E02 (中转)', 'California (美国) F01', 'China Taiwan A01 (中转)', 'China Taiwan B01', 'China Taiwan B02', 'China Taiwan B02 (中转)', 'China Taiwan C01', 'China Taiwan C01 (中转)', 'China Taiwan C02', 'China Taiwan C02 (中转)', 'Japan A11', 'Japan A11 (中转)', 'Japan A12', 'Japan A12 (中转)', 'Japan B01', 'Z 新加坡A02', 'Z 阿根廷01', 'Z 韩国B05']
+  proxies: ['🔰 节点选择', '🎯 全球直连', '♻️ 自动选择', 'California (美国) A17', 'California (美国) A19', 'California (美国) B07', 'California (美国) B08', 'California (美国) B09', 'California (美国) B10', 'California (美国) B11', 'California (美国) B12', 'California (美国) B13', 'California (美国) B14', 'California (美国) B15', 'California (美国) B16', 'California (美国) B17', 'California (美国) B18', 'California (美国) B20', 'California (美国) B21', 'California (美国) B22', 'California (美国) B23', 'California (美国) B24', 'California (美国) B25', 'California (美国) B26', 'California (美国) B27', 'California (美国) E02', 'California (美国) E02 (中转)', 'California (美国) F01', 'China Taiwan A01 (中转)', 'China Taiwan B01', 'China Taiwan B02', 'China Taiwan B02 (中转)', 'China Taiwan C01', 'China Taiwan C01 (中转)', 'China Taiwan C02', 'China Taiwan C02 (中转)', 'Japan A11', 'Japan A11 (中转)', 'Japan A12', 'Japan A12 (中转)', 'Japan B01', 'Z 新加坡A02', 'Z 阿根廷01', 'Z 韩国B05']
  -
   name: '🎮 Steam'
   type: select
