@@ -26,6 +26,8 @@ jobs:
       
       - run: python scripts/fetch_airport.py ${{ secrets.AIRPORT_SUB }}
       
+      - run: python scripts/fetch_shadowrocket.py ${{ secrets.SHADOWROCKET_SUB }}
+      
       - run: python generators/gen_clash.py
       
       - run: python generators/gen_shadowrocket.py
