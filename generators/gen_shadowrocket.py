@@ -33,6 +33,7 @@ def generate_shadowrocket(base_file):
     
     result_lines = []
     i = 0
+    processed_sections = set()
     while i < len(base_lines):
         line = base_lines[i].strip()
         result_lines.append(base_lines[i])
@@ -41,6 +42,7 @@ def generate_shadowrocket(base_file):
         if line.startswith('[') and line.endswith(']'):
             section = line
             if section in user_sections:
+                processed_sections.add(section)
                 while i < len(base_lines):
                     next_line = base_lines[i].strip()
                     if next_line.startswith('[') and next_line.endswith(']'):
@@ -48,6 +50,11 @@ def generate_shadowrocket(base_file):
                     result_lines.append(base_lines[i])
                     i += 1
                 result_lines.extend(user_sections[section])
+    
+    for section, lines in user_sections.items():
+        if section not in processed_sections:
+            result_lines.append(section)
+            result_lines.extend(lines)
     
     with open('output/shadowrocket.conf', 'w') as f:
         f.write('\n'.join(result_lines))
