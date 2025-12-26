@@ -11393,7 +11393,6 @@ rules:
  - 'DOMAIN-SUFFIX,wetvinfo.com,🌍 国外媒体'
  - 'IP-CIDR,150.109.28.51/32,🌍 国外媒体,no-resolve'
  - 'DOMAIN-SUFFIX,googlevideo.com,🌍 国外媒体'
- - 'DOMAIN-SUFFIX,youtube.com,🌍 国外媒体'
  - 'DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体'
  - 'DOMAIN,youtubei.googleapis.com,🌍 国外媒体'
  - 'DOMAIN,yt3.ggpht.com,🌍 国外媒体'
@@ -12495,3 +12494,4 @@ rules:
 
  - 'DOMAIN-SUFFIX,testmicro.com,💡 测试策略组'
  - 'DOMAIN-SUFFIX,assets-testmicro1.com,💡 测试策略组'
+ - 'DOMAIN-SUFFIX,youtube.com,💡 测试策略组'
