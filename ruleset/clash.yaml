@@ -6,3 +6,4 @@ proxy-groups:
 rules:
  - 'DOMAIN-SUFFIX,testmicro.com,💡 测试策略组'
  - 'DOMAIN-SUFFIX,assets-testmicro1.com,💡 测试策略组'
+ - 'DOMAIN-SUFFIX,youtube.com,💡 测试策略组'
