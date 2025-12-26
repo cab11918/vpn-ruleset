@@ -62,11 +62,14 @@ def generate_shadowrocket(base_file):
                         if len(parts) >= 2:
                             rule_key = f"{parts[0]},{parts[1]}"
                             if rule_key in user_rules:
+                                result_lines.append(user_rules[rule_key])
+                                del user_rules[rule_key]
                                 i += 1
                                 continue
                     result_lines.append(base_lines[i])
                     i += 1
-                result_lines.extend(user_sections[section])
+                for rule in user_rules.values():
+                    result_lines.append(rule)
     
     for section, lines in user_sections.items():
         if section not in processed_sections:

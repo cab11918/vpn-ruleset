@@ -75,12 +75,15 @@ def generate_clash(clash_file):
                         if len(parts) >= 2:
                             rule_key = f"{parts[0]},{parts[1]}"
                             if rule_key in user_rules:
+                                result_lines.append('  ' + user_rules[rule_key])
+                                del user_rules[rule_key]
                                 i += 1
                                 continue
                     result_lines.append(next_line)
                     i += 1
-                # 追加用户内容
-                result_lines.extend(user_sections[key])
+                # 追加剩余用户内容
+                for rule in user_rules.values():
+                    result_lines.append('  ' + rule)
     
     with open('output/clash.yaml', 'w') as f:
         f.write('\n'.join(result_lines))
