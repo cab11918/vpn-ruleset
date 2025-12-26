@@ -1,16 +1,16 @@
-def generate_clash(airport_file):
-    with open(airport_file) as f:
-        airport_content = f.read()
+def generate_clash(clash_file):
+    with open(clash_file) as f:
+        clash_content = f.read()
     
     try:
         with open('ruleset/clash.yaml') as f:
             user_content = f.read()
     except FileNotFoundError:
         with open('output/clash.yaml', 'w') as f:
-            f.write(airport_content)
+            f.write(clash_content)
         return
     
-    airport_lines = airport_content.split('\n')
+    clash_lines = clash_content.split('\n')
     user_lines = user_content.split('\n')
     
     # 解析用户配置
@@ -40,8 +40,8 @@ def generate_clash(airport_file):
     # 处理机场文件
     result_lines = []
     i = 0
-    while i < len(airport_lines):
-        line = airport_lines[i]
+    while i < len(clash_lines):
+        line = clash_lines[i]
         stripped = line.lstrip()
         result_lines.append(line)
         i += 1
@@ -51,8 +51,8 @@ def generate_clash(airport_file):
             if key in user_sections:
                 base_indent = len(line) - len(stripped)
                 # 跳过机场section
-                while i < len(airport_lines):
-                    next_line = airport_lines[i]
+                while i < len(clash_lines):
+                    next_line = clash_lines[i]
                     next_stripped = next_line.lstrip()
                     if next_stripped and not next_stripped.startswith('#'):
                         next_indent = len(next_line) - len(next_stripped)
@@ -67,4 +67,4 @@ def generate_clash(airport_file):
         f.write('\n'.join(result_lines))
 
 if __name__ == '__main__':
-    generate_clash('output/airport.yaml')
+    generate_clash('output/clash_base.yaml')

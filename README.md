@@ -8,7 +8,7 @@
 
 在 GitHub 仓库 Settings → Secrets and variables → Actions 中添加：
 
-- Name: `AIRPORT_SUB`
+- Name: `CLASH_SUB`
 - Value: 你的机场 Clash 订阅地址
 
 ### 2. 运行 GitHub Actions
@@ -82,7 +82,7 @@ generators/               # 规则生成器
   └── gen_shadowrocket.py
 
 scripts/                  # 辅助脚本
-  └── fetch_airport.py
+  └── fetch_clash.py
 
 output/                   # 生成的配置文件
   ├── clash.yaml

@@ -24,7 +24,7 @@ jobs:
       
       - run: pip install pyyaml requests
       
-      - run: python scripts/fetch_airport.py ${{ secrets.AIRPORT_SUB }}
+      - run: python scripts/fetch_clash.py ${{ secrets.CLASH_SUB }}
       
       - run: python scripts/fetch_shadowrocket.py ${{ secrets.SHADOWROCKET_SUB }}
       

@@ -3,7 +3,7 @@ import yaml
 import sys
 import os
 
-def fetch_airport(url):
+def fetch_clash(url):
     resp = requests.get(url, timeout=30)
     resp.raise_for_status()
     return resp.text
@@ -11,7 +11,7 @@ def fetch_airport(url):
 if __name__ == '__main__':
     clash_url = sys.argv[1]
 
-    content = fetch_airport(clash_url)
+    content = fetch_clash(clash_url)
     os.makedirs('output', exist_ok=True)
-    with open('output/airport.yaml', 'w') as f:
+    with open('output/clash_base.yaml', 'w') as f:
         f.write(content)
